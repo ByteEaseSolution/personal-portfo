@@ -10,23 +10,28 @@
 
 @media print {
 
-  /* ---- base ---- */
+  /* ---- base: warm blush "scrapbook paper" (same feel as the website) ---- */
   html { font-size: 11pt; }
   html, body {
-    background: #fff !important;
+    background-color: #fdf1f4 !important;
+    background-image:
+      radial-gradient(circle at 18% 12%, rgba(255,255,255,.6), transparent 42%),
+      radial-gradient(circle at 85% 85%, rgba(210,91,134,.14), transparent 52%) !important;
     color: #42283a !important;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
   }
   body { font-size: 1.1rem; line-height: 1.5; }
 
   * { animation: none !important; transition: none !important; }
-  .tilt { transform: none !important; }
+  /* keep the gentle scrapbook tilt in print */
+  .tilt { transform: rotate(var(--rot, -2deg)) !important; }
 
   /* Hide screen-only chrome */
   .topbar, .cover-scroll, .btn-pdf, #nav-links, footer, #videos, #pdf-overlay, #lightbox { display: none !important; }
 
   /* Make colours & backgrounds actually print */
-  .polaroid, .tl-card, .member, .closing-card, .facts--card, .chip,
-  .tl-dot, .print-frame, .print-frame *, .member, .cover-inner::after {
+  .polaroid, .tape, .photo, .tl-card, .member, .closing-card, .facts--card, .chip,
+  .tl-dot, .print-frame, .print-frame *, .cover-inner::after {
     -webkit-print-color-adjust: exact; print-color-adjust: exact;
   }
 
@@ -40,7 +45,7 @@
   /* ---- COVER (light, elegant title page) ---- */
   .cover,
   .cover.cover--photo {
-    background: #fff !important;
+    background: transparent !important;
     min-height: 0 !important;
     height: 247mm;
     display: flex; align-items: center; justify-content: center;
@@ -61,7 +66,7 @@
   .section {
     page-break-before: always; break-before: page;
     border: none !important;
-    padding: 10mm 0 2mm;   /* top pad keeps the heading below the frame's top edge */
+    padding: 8mm 0 2mm;   /* top pad keeps the heading below the frame's top edge */
   }
   #about { page-break-before: avoid; break-before: avoid; }
   .section-head { margin-bottom: 6mm; }
@@ -75,8 +80,8 @@
   .facts--card { max-width: 150mm; margin: 0 auto 5mm; }
   .chips.center { max-width: 150mm; margin: 0 auto 5mm; }
   .photo-story {
-    font-size: 1rem; line-height: 1.45; color: #6b4a5a;
-    padding: 0 1mm 2mm; text-align: left;
+    font-size: .82rem; line-height: 1.35; color: #6b4a5a;
+    padding: 0 1mm 2mm; text-align: center;
   }
 
   /* keep blocks whole */
@@ -85,12 +90,18 @@
   }
   h1, h2, h3 { page-break-after: avoid; break-after: avoid; }
 
-  /* cards: flat, soft outline so they read on white */
-  .polaroid, .tl-card, .member, .closing-card, .facts--card {
-    box-shadow: none !important;
-    border: 1px solid #ecc6d6 !important;
+  /* scrapbook polaroids: white frame + tape + soft shadow (like the website) */
+  .polaroid {
+    background: #fffafc !important;
+    border: none !important;
+    box-shadow: 0 3px 11px rgba(70, 40, 58, 0.22) !important;
   }
-  .tape { display: none !important; }
+  .tape { display: block !important; }
+  /* the info cards keep a soft outline so they read on the paper */
+  .tl-card, .member, .closing-card, .facts--card {
+    box-shadow: none !important;
+    border: 1px solid #e7bccd !important;
+  }
 
   /* ---- single-column, centred media for text sections ---- */
   .about-grid, .split, .culture-grid { grid-template-columns: 1fr !important; gap: 4mm !important; }
@@ -112,13 +123,18 @@
   .tl-card h3 { font-size: 1.6rem !important; }
   .tl-photo { max-width: 55mm; margin-top: 4mm; }
 
-  /* ---- gallery: one photo per row, album-style, centred in a definite-width
-     container (avoids any grid-track vs. image intrinsic-size conflict) ---- */
-  .scrapbook { grid-template-columns: 1fr !important; gap: 9mm !important; max-width: 118mm; margin: 0 auto; }
+  /* ---- gallery: scrapbook collage, two polaroids per row ---- */
+  .scrapbook {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 9mm 7mm !important;
+    align-items: start;
+    margin: 2mm 0 0;
+  }
   .scrapbook .polaroid { width: 100%; }
-  .scrapbook .polaroid .photo { height: 72mm; overflow: hidden; }
+  .scrapbook .polaroid .photo { height: 42mm; overflow: hidden; }
   .scrapbook .polaroid .photo img { width: 100%; height: 100%; object-fit: cover; }
-  .polaroid figcaption { font-size: 1.35rem; padding: .3rem .2rem .5rem; }
+  .polaroid figcaption { font-size: 1.25rem; padding: .25rem .2rem .35rem; }
+  .polaroid figcaption .meta { font-size: .62rem; }
 
   /* ---- closing ---- */
   .closing-card { box-shadow: none !important; border: 1px solid #ecc6d6 !important; padding: 10mm; }

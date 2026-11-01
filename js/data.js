@@ -350,6 +350,13 @@ window.PORTFOLIO_DATA = {
           "story": "Rangoli",
           "place": "",
           "date": "2015"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1shJIeWRitboQPJ2jlTy0Av2yPtt7Q241/view?usp=drive_link",
+          "caption": "Hanuman Mandir every Tuesday",
+          "story": "",
+          "place": "",
+          "date": ""
         }
       ]
     },
@@ -386,7 +393,7 @@ window.PORTFOLIO_DATA = {
           "date": ""
         },
         {
-          "src": "",
+          "src": "https://drive.google.com/file/d/1vkcVJxLWfdehPPrnzGMVQGXkV7l0vFEr/view?usp=drive_link",
           "caption": "",
           "story": "",
           "place": "",
@@ -400,7 +407,15 @@ window.PORTFOLIO_DATA = {
       "paragraphs": [],
       "facts": [],
       "interests": [],
-      "photos": []
+      "photos": [
+        {
+          "src": "",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": ""
+        }
+      ]
     },
     {
       "title": "Special Places We've Been",
