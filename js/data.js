@@ -3,7 +3,7 @@ window.PORTFOLIO_DATA = {
   "meta": {
     "name": "Samir",
     "tagline": "A little window into my world - my family, my roots, and Prarthna, the girl who changed everything.",
-    "coverPhoto": "https://drive.google.com/file/d/1cBtel6ABLYxuFXjjwCtXscimb1MDkilK/view?usp=drive_link"
+    "coverPhoto": "photos/1cBtel6ABLYxuFXjjwCtXscimb1MDkilK.jpg"
   },
   "chapters": [
     {
@@ -104,35 +104,35 @@ window.PORTFOLIO_DATA = {
       ],
       "photos": [
         {
-          "src": "https://drive.google.com/file/d/1CfhBoDVNlrNBLsLPFv08v4CcIHuMlNGY/view?usp=sharing",
+          "src": "photos/1CfhBoDVNlrNBLsLPFv08v4CcIHuMlNGY.jpg",
           "caption": "",
           "story": "",
           "place": "",
           "date": "Oct 2026"
         },
         {
-          "src": "https://drive.google.com/file/d/1TOTQ_-0AoAL06LiM5X2JRpxVOnKD5Kcw/view?usp=sharing",
+          "src": "photos/1TOTQ_-0AoAL06LiM5X2JRpxVOnKD5Kcw.jpg",
           "caption": "",
           "story": "",
           "place": "",
           "date": "Feb 2025"
         },
         {
-          "src": "https://drive.google.com/file/d/1oFYcaWmtNuoS59UC0FSwaoqVhzxFudJ3/view?usp=drive_link",
+          "src": "photos/1oFYcaWmtNuoS59UC0FSwaoqVhzxFudJ3.jpg",
           "caption": "",
           "story": "",
           "place": "",
           "date": "Mar 2025"
         },
         {
-          "src": "https://drive.google.com/file/d/1Q90WSLy2iuQ2fczKmwOA273GfxsxkMLb/view?usp=drive_link",
+          "src": "photos/1Q90WSLy2iuQ2fczKmwOA273GfxsxkMLb.jpg",
           "caption": "Cricket",
           "story": "Went to stadium for cricket match",
           "place": "",
           "date": "Mar 2025"
         },
         {
-          "src": "https://drive.google.com/file/d/1mZinveaPaUjzcp2xeSTLnVzdNzhxYRJs/view?usp=drive_link",
+          "src": "photos/1mZinveaPaUjzcp2xeSTLnVzdNzhxYRJs.jpg",
           "caption": "Uttarayan",
           "story": "",
           "place": "",
@@ -148,35 +148,35 @@ window.PORTFOLIO_DATA = {
       "interests": [],
       "photos": [
         {
-          "src": "https://drive.google.com/file/d/18PAP8ixCYLSVEA_MNZgwYFTZEkXG4fLJ/view?usp=drive_link",
+          "src": "photos/18PAP8ixCYLSVEA_MNZgwYFTZEkXG4fLJ.jpg",
           "caption": "School Annual Function",
           "story": "I used to participate in every annual function in my school",
           "place": "",
           "date": "Dec 2017"
         },
         {
-          "src": "https://drive.google.com/file/d/10F13NKHwzf76kNJuM8Xv-HAjEKkASGQT/view?usp=drive_link",
+          "src": "photos/10F13NKHwzf76kNJuM8Xv-HAjEKkASGQT.jpg",
           "caption": "Pre Primary",
           "story": "",
           "place": "",
           "date": ""
         },
         {
-          "src": "https://drive.google.com/file/d/1II5GEdNgGcxKIxB7rhvnLj48YYQam9yV/view?usp=drive_link",
+          "src": "photos/1II5GEdNgGcxKIxB7rhvnLj48YYQam9yV.jpg",
           "caption": "Nursery",
           "story": "",
           "place": "",
           "date": ""
         },
         {
-          "src": "https://drive.google.com/file/d/1wpWZbqiSZ_2HLm4Iyb62NTY7WRAUnIHv/view?usp=drive_link",
+          "src": "photos/1wpWZbqiSZ_2HLm4Iyb62NTY7WRAUnIHv.jpg",
           "caption": "",
           "story": "My first cycle",
           "place": "",
           "date": "2015"
         },
         {
-          "src": "https://drive.google.com/file/d/1MB2VwZ7is5aK_zv8UTR5q-1_IZE4BqiL/view?usp=drive_link",
+          "src": "photos/1MB2VwZ7is5aK_zv8UTR5q-1_IZE4BqiL.jpg",
           "caption": "",
           "story": "Flower Show",
           "place": "",
@@ -205,91 +205,91 @@ window.PORTFOLIO_DATA = {
       "interests": [],
       "photos": [
         {
-          "src": "https://drive.google.com/file/d/1WJOmwbIuAu1mLYULiiabE8EPCb0x4Y_G/view?usp=drive_link",
+          "src": "photos/1WJOmwbIuAu1mLYULiiabE8EPCb0x4Y_G.jpg",
           "caption": "Tirupati Rushivan",
           "story": "We went to have some playful activities there",
           "place": "",
           "date": "2021"
         },
         {
-          "src": "https://drive.google.com/file/d/1Ey5IY4U8Cm4bB9_WZfLmW7xH1xkVqdVk/view?usp=drive_link",
+          "src": "photos/1Ey5IY4U8Cm4bB9_WZfLmW7xH1xkVqdVk.jpg",
           "caption": "My Family",
           "story": "We went to Polo Forest",
           "place": "",
           "date": "2026"
         },
         {
-          "src": "https://drive.google.com/file/d/1dBX556f_zddzF5_9gd8qqV-4hRHhBV7z/view?usp=drive_link",
+          "src": "photos/1dBX556f_zddzF5_9gd8qqV-4hRHhBV7z.jpg",
           "caption": "",
           "story": "",
           "place": "",
           "date": "2023"
         },
         {
-          "src": "https://drive.google.com/file/d/1bHx2IQW_dTtukPmjSrBb9fBv1nuTCpmZ/view?usp=drive_link",
+          "src": "photos/1bHx2IQW_dTtukPmjSrBb9fBv1nuTCpmZ.jpg",
           "caption": "Go Karting",
           "story": "After watching sunset in Saputara Hill Point, with my cousins",
           "place": "Saputara",
           "date": "Nov 2023"
         },
         {
-          "src": "https://drive.google.com/file/d/1FUfvvvS_mO4Rqy5HKpc8YnFs3fm2FRM7/view?usp=drive_link",
+          "src": "photos/1FUfvvvS_mO4Rqy5HKpc8YnFs3fm2FRM7.jpg",
           "caption": "",
           "story": "",
           "place": "Saputara",
           "date": "Nov 2023"
         },
         {
-          "src": "https://drive.google.com/file/d/1vkdstkHzzD6XL4cZTtgPNQflcQxyYEPN/view?usp=drive_link",
+          "src": "photos/1vkdstkHzzD6XL4cZTtgPNQflcQxyYEPN.jpg",
           "caption": "",
           "story": "Cycling in Saputara",
           "place": "",
           "date": ""
         },
         {
-          "src": "https://drive.google.com/file/d/1eHFFJX-Zuq1YkKKrFmud28sxU_HARFRn/view?usp=drive_link",
+          "src": "photos/1eHFFJX-Zuq1YkKKrFmud28sxU_HARFRn.jpg",
           "caption": "",
           "story": "",
           "place": "",
           "date": ""
         },
         {
-          "src": "https://drive.google.com/file/d/1ZrYcA9h_h2VtoRmg7Mq5jQxnQ9LKtZPD/view?usp=drive_link",
+          "src": "photos/1ZrYcA9h_h2VtoRmg7Mq5jQxnQ9LKtZPD.jpg",
           "caption": "Traditional Dress",
           "story": "Didi's Shadi",
           "place": "Churu",
           "date": "Feb 2025"
         },
         {
-          "src": "https://drive.google.com/file/d/1v4qgwbuq9ZCDgIgzcbrCL46-vowAFalt/view?usp=drive_link",
+          "src": "photos/1v4qgwbuq9ZCDgIgzcbrCL46-vowAFalt.jpg",
           "caption": "",
           "story": "",
           "place": "",
           "date": "Feb 2025"
         },
         {
-          "src": "https://drive.google.com/file/d/1WlHzELEeuspit5gcQHUclUytyzgnwe-6/view?usp=drive_link",
+          "src": "photos/1WlHzELEeuspit5gcQHUclUytyzgnwe-6.jpg",
           "caption": "",
           "story": "",
           "place": "Somnath",
           "date": "Apr 2025"
         },
         {
-          "src": "https://drive.google.com/file/d/1fN4Vs8kNuBnDnwTeAb6D7ijiyLhbrXO6/view?usp=drive_link",
+          "src": "photos/1fN4Vs8kNuBnDnwTeAb6D7ijiyLhbrXO6.jpg",
           "caption": "",
           "story": "",
           "place": "Gir",
           "date": "2025"
         },
         {
-          "src": "https://drive.google.com/file/d/1-esdEltuqE8k2B1ukIFlGQYwY0JREeiu/view?usp=drive_link",
+          "src": "photos/1-esdEltuqE8k2B1ukIFlGQYwY0JREeiu.jpg",
           "caption": "",
           "story": "Diwali Pooja",
           "place": "",
           "date": "2021"
         },
         {
-          "src": "https://drive.google.com/file/d/11jpUNcFkJhcolNwjJPJdBGGZYA-Z_Oj8/view?usp=drive_link",
+          "src": "photos/11jpUNcFkJhcolNwjJPJdBGGZYA-Z_Oj8.jpg",
           "caption": "Holi",
           "story": "",
           "place": "",
@@ -324,35 +324,35 @@ window.PORTFOLIO_DATA = {
       "interests": [],
       "photos": [
         {
-          "src": "https://drive.google.com/file/d/15wSMySqc3vo38ZmZb_6gzeTDR_kGwziM/view?usp=drive_link",
+          "src": "photos/15wSMySqc3vo38ZmZb_6gzeTDR_kGwziM.jpg",
           "caption": "Gauri Pooja",
           "story": "We do gauri pooja after Holi",
           "place": "",
           "date": ""
         },
         {
-          "src": "https://drive.google.com/file/d/1NN1J9lLAY60NVlT0M363YNaBXGdivtbZ/view?usp=drive_link",
+          "src": "photos/1NN1J9lLAY60NVlT0M363YNaBXGdivtbZ.jpg",
           "caption": "Rakshabandhan",
           "story": "",
           "place": "",
           "date": "2025"
         },
         {
-          "src": "https://drive.google.com/file/d/1D5kh_NQ0654k4_ioGAW-fg1Dmy7aIsVd/view?usp=drive_link",
+          "src": "photos/1D5kh_NQ0654k4_ioGAW-fg1Dmy7aIsVd.jpg",
           "caption": "Ganesh Chaturthi",
           "story": "",
           "place": "",
           "date": "2015"
         },
         {
-          "src": "https://drive.google.com/file/d/1F8Ba-d_v4ehmj-6vQvG98SWd35rxHwEM/view?usp=drive_link",
+          "src": "photos/1F8Ba-d_v4ehmj-6vQvG98SWd35rxHwEM.jpg",
           "caption": "",
           "story": "Rangoli",
           "place": "",
           "date": "2015"
         },
         {
-          "src": "https://drive.google.com/file/d/1shJIeWRitboQPJ2jlTy0Av2yPtt7Q241/view?usp=drive_link",
+          "src": "photos/1shJIeWRitboQPJ2jlTy0Av2yPtt7Q241.jpg",
           "caption": "Hanuman Mandir every Tuesday",
           "story": "",
           "place": "",
@@ -368,7 +368,7 @@ window.PORTFOLIO_DATA = {
       "interests": [],
       "photos": [
         {
-          "src": "https://drive.google.com/file/d/1A5LG2PEZ1ZsP5fnzaeJNdURZZAqk5mUQ/view?usp=drive_link",
+          "src": "photos/1A5LG2PEZ1ZsP5fnzaeJNdURZZAqk5mUQ.jpg",
           "caption": "",
           "story": "Our Old Car",
           "place": "",
@@ -386,14 +386,14 @@ window.PORTFOLIO_DATA = {
       "interests": [],
       "photos": [
         {
-          "src": "https://drive.google.com/file/d/1HECxVYNp5dwJYZZrKlde_2Ej320lcDlk/view?usp=drive_link",
+          "src": "photos/1HECxVYNp5dwJYZZrKlde_2Ej320lcDlk.jpg",
           "caption": "",
           "story": "",
           "place": "",
           "date": ""
         },
         {
-          "src": "https://drive.google.com/file/d/1vkcVJxLWfdehPPrnzGMVQGXkV7l0vFEr/view?usp=drive_link",
+          "src": "photos/1vkcVJxLWfdehPPrnzGMVQGXkV7l0vFEr.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -411,7 +411,7 @@ window.PORTFOLIO_DATA = {
       "interests": [],
       "photos": [
         {
-          "src": "https://drive.google.com/file/d/1hNelc583ZR7FzBtIXvTrh_xzAlziXF-1/view?usp=sharing",
+          "src": "photos/1hNelc583ZR7FzBtIXvTrh_xzAlziXF-1.jpg",
           "caption": "First time at Kankaria",
           "story": "",
           "place": "",
@@ -419,7 +419,7 @@ window.PORTFOLIO_DATA = {
           "group": "First Time at Kankaria"
         },
         {
-          "src": "https://drive.google.com/file/d/11c2D1l6s5hfL_j12mmilGQO6590lHz57/view?usp=sharing",
+          "src": "photos/11c2D1l6s5hfL_j12mmilGQO6590lHz57.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -427,14 +427,14 @@ window.PORTFOLIO_DATA = {
           "group": "First Time at Kankaria"
         },
         {
-          "src": "https://drive.google.com/file/d/1cLOd5zwAjYnwazRVQLw1RflijCYBXaUi/view?usp=sharing",
+          "src": "photos/1cLOd5zwAjYnwazRVQLw1RflijCYBXaUi.jpg",
           "caption": "First Prank",
           "story": "",
           "place": "",
           "date": ""
         },
         {
-          "src": "https://drive.google.com/file/d/12s0qATyX7DwOncgzUrf7vlBeiW_j9e2J/view?usp=sharing",
+          "src": "photos/12s0qATyX7DwOncgzUrf7vlBeiW_j9e2J.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -442,7 +442,7 @@ window.PORTFOLIO_DATA = {
           "group": "My Birthday"
         },
         {
-          "src": "https://drive.google.com/file/d/1Hkin5cBVYQcYAjXMKtKkgNX95IgsGsOr/view?usp=sharing",
+          "src": "photos/1Hkin5cBVYQcYAjXMKtKkgNX95IgsGsOr.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -450,7 +450,7 @@ window.PORTFOLIO_DATA = {
           "group": "My Birthday"
         },
         {
-          "src": "https://drive.google.com/file/d/13rGUlUlA8gOWPYMBd70XSaJtCXg1E-Zr/view?usp=sharing",
+          "src": "photos/13rGUlUlA8gOWPYMBd70XSaJtCXg1E-Zr.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -458,7 +458,7 @@ window.PORTFOLIO_DATA = {
           "group": "My Birthday"
         },
         {
-          "src": "https://drive.google.com/file/d/1iJ8vUGBTvBkkRFkKr0SC8DAVRtMDijNx/view?usp=sharing",
+          "src": "photos/1iJ8vUGBTvBkkRFkKr0SC8DAVRtMDijNx.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -466,14 +466,14 @@ window.PORTFOLIO_DATA = {
           "group": "My Birthday"
         },
         {
-          "src": "https://drive.google.com/file/d/1NEZkmDVqpbYaV5S3EyXT7VHCwlVXcMN4/view?usp=sharing",
+          "src": "photos/1NEZkmDVqpbYaV5S3EyXT7VHCwlVXcMN4.jpg",
           "caption": "First morning walk",
           "story": "",
           "place": "Ahmedabad",
           "date": "Nov 2025"
         },
         {
-          "src": "https://drive.google.com/file/d/1x9aFJ2sDywdJbk61vcvshSjr9USgedb2/view?usp=sharing",
+          "src": "photos/1x9aFJ2sDywdJbk61vcvshSjr9USgedb2.jpg",
           "caption": "Princess Day",
           "story": "",
           "place": "",
@@ -481,7 +481,7 @@ window.PORTFOLIO_DATA = {
           "group": ""
         },
         {
-          "src": "https://drive.google.com/file/d/1m5iOQQU2zv4xDQZks6tGxsqSu16KgsTr/view?usp=sharing",
+          "src": "photos/1m5iOQQU2zv4xDQZks6tGxsqSu16KgsTr.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -489,7 +489,7 @@ window.PORTFOLIO_DATA = {
           "group": "Prarthna bday"
         },
         {
-          "src": "https://drive.google.com/file/d/1aCwPtWuoq0DsCdVUUd7OTro-TNVk9YIH/view?usp=sharing",
+          "src": "photos/1aCwPtWuoq0DsCdVUUd7OTro-TNVk9YIH.jpg",
           "caption": "Sweater gift",
           "story": "",
           "place": "",
@@ -497,7 +497,7 @@ window.PORTFOLIO_DATA = {
           "group": ""
         },
         {
-          "src": "https://drive.google.com/file/d/1YlvUlJhU43wHYNxe5Z-5-7_g8s5-KJ9w/view?usp=sharing",
+          "src": "photos/1YlvUlJhU43wHYNxe5Z-5-7_g8s5-KJ9w.jpg",
           "caption": "Online Games",
           "story": "",
           "place": "",
@@ -505,7 +505,7 @@ window.PORTFOLIO_DATA = {
           "group": ""
         },
         {
-          "src": "https://drive.google.com/file/d/1GTEpXvFuHMCjGK_G8n7ysJAWGDE9uxFR/view?usp=sharing",
+          "src": "photos/1GTEpXvFuHMCjGK_G8n7ysJAWGDE9uxFR.jpg",
           "caption": "Drawing by me",
           "story": "",
           "place": "",
@@ -513,7 +513,7 @@ window.PORTFOLIO_DATA = {
           "group": ""
         },
         {
-          "src": "https://drive.google.com/file/d/1kXNJuZIzXxswxuINBiMXH57gXaPDE1x4/view?usp=sharing",
+          "src": "photos/1kXNJuZIzXxswxuINBiMXH57gXaPDE1x4.jpg",
           "caption": "Paper flowers by me",
           "story": "",
           "place": "",
@@ -521,7 +521,7 @@ window.PORTFOLIO_DATA = {
           "group": ""
         },
         {
-          "src": "https://drive.google.com/file/d/1hAqNWC9-agz6f7zq9qJJGn1xLgqNqfGb/view?usp=sharing",
+          "src": "photos/1hAqNWC9-agz6f7zq9qJJGn1xLgqNqfGb.jpg",
           "caption": "Went to University to submit papers",
           "story": "",
           "place": "",
@@ -529,7 +529,7 @@ window.PORTFOLIO_DATA = {
           "group": ""
         },
         {
-          "src": "https://drive.google.com/file/d/13pQNGHF1CZ0MD_hEd5YIOWkM87xGadbz/view?usp=sharing",
+          "src": "photos/13pQNGHF1CZ0MD_hEd5YIOWkM87xGadbz.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -537,7 +537,7 @@ window.PORTFOLIO_DATA = {
           "group": ""
         },
         {
-          "src": "https://drive.google.com/file/d/1ftEeG9RhFxiAdFGjkaAXEEOjuR_lPNnV/view?usp=sharing",
+          "src": "photos/1ftEeG9RhFxiAdFGjkaAXEEOjuR_lPNnV.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -545,7 +545,7 @@ window.PORTFOLIO_DATA = {
           "group": ""
         },
         {
-          "src": "https://drive.google.com/file/d/1744eoYtxPVK1NlU5OAPSjj0m5I9qSLqO/view?usp=sharing",
+          "src": "photos/1744eoYtxPVK1NlU5OAPSjj0m5I9qSLqO.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -553,7 +553,7 @@ window.PORTFOLIO_DATA = {
           "group": "Clay Date"
         },
         {
-          "src": "https://drive.google.com/file/d/1b49hz-U29l2quT5bKq-9V8bpiA9pyvSS/view?usp=sharing",
+          "src": "photos/1b49hz-U29l2quT5bKq-9V8bpiA9pyvSS.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -561,7 +561,7 @@ window.PORTFOLIO_DATA = {
           "group": "Clay Date"
         },
         {
-          "src": "https://drive.google.com/file/d/10wdLkSiwXIj88b92AKbYIlAcTAB3piDT/view?usp=sharing",
+          "src": "photos/10wdLkSiwXIj88b92AKbYIlAcTAB3piDT.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -569,7 +569,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date"
         },
         {
-          "src": "https://drive.google.com/file/d/1T6M0E3MOrjUr69J_dP5yHn6lQ4d-GETr/view?usp=sharing",
+          "src": "photos/1T6M0E3MOrjUr69J_dP5yHn6lQ4d-GETr.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -577,7 +577,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date"
         },
         {
-          "src": "https://drive.google.com/file/d/1iyjn7Z97mYEwmE6P4JvrKqoYnnJUaMgy/view?usp=sharing",
+          "src": "photos/1iyjn7Z97mYEwmE6P4JvrKqoYnnJUaMgy.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -585,7 +585,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date"
         },
         {
-          "src": "https://drive.google.com/file/d/1cX_RdD7Xw_NYq5KWiaRtcrS883OIHgqA/view?usp=sharing",
+          "src": "photos/1cX_RdD7Xw_NYq5KWiaRtcrS883OIHgqA.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -593,7 +593,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date-2"
         },
         {
-          "src": "https://drive.google.com/file/d/1BeVBhJO39AsExmZ3NkFh_afoQ6nnfHP2/view?usp=sharing",
+          "src": "photos/1BeVBhJO39AsExmZ3NkFh_afoQ6nnfHP2.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -601,7 +601,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date-2"
         },
         {
-          "src": "https://drive.google.com/file/d/1-n2mCboz--Hr4uYVoYPtBpddmQzrmAHL/view?usp=sharing",
+          "src": "photos/1-n2mCboz--Hr4uYVoYPtBpddmQzrmAHL.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -609,7 +609,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date-2"
         },
         {
-          "src": "https://drive.google.com/file/d/1nru6jhvbj4dWz46HpwgO6hiavZLFkOKq/view?usp=sharing",
+          "src": "photos/1nru6jhvbj4dWz46HpwgO6hiavZLFkOKq.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -617,7 +617,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date-3"
         },
         {
-          "src": "https://drive.google.com/file/d/1M_HiJVbsBuuLR3Ef0rpe9Ux_UA-nLTrc/view?usp=sharing",
+          "src": "photos/1M_HiJVbsBuuLR3Ef0rpe9Ux_UA-nLTrc.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -625,7 +625,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date-3"
         },
         {
-          "src": "https://drive.google.com/file/d/1SdraacYIE-rJdcXa2fqhOAxnHpxOAMHU/view?usp=sharing",
+          "src": "photos/1SdraacYIE-rJdcXa2fqhOAxnHpxOAMHU.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -633,7 +633,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date-3"
         },
         {
-          "src": "https://drive.google.com/file/d/17-bMHRewFeb4l9yhIcZeTAJ1OtdrvfuK/view?usp=sharing",
+          "src": "photos/17-bMHRewFeb4l9yhIcZeTAJ1OtdrvfuK.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -641,7 +641,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date-3"
         },
         {
-          "src": "https://drive.google.com/file/d/1lUTkvXKcD-g26hmLJNMhl13XC5ZzYDu6/view?usp=sharing",
+          "src": "photos/1lUTkvXKcD-g26hmLJNMhl13XC5ZzYDu6.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -649,7 +649,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date-3"
         },
         {
-          "src": "https://drive.google.com/file/d/1_Etpo0hwSGSdwDuuyjiVT_DepfSTXDSS/view?usp=sharing",
+          "src": "photos/1_Etpo0hwSGSdwDuuyjiVT_DepfSTXDSS.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -657,7 +657,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date-4"
         },
         {
-          "src": "https://drive.google.com/file/d/1Lszf6SmlODJXWnuoN2Hm5QEHmDXZDQMc/view?usp=sharing",
+          "src": "photos/1Lszf6SmlODJXWnuoN2Hm5QEHmDXZDQMc.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -665,7 +665,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date-4"
         },
         {
-          "src": "https://drive.google.com/file/d/1ahTHgLxZ8BN-MITI8TwzrnCB6RNjdd7c/view?usp=sharing",
+          "src": "photos/1ahTHgLxZ8BN-MITI8TwzrnCB6RNjdd7c.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -673,7 +673,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date-4"
         },
         {
-          "src": "https://drive.google.com/file/d/1Se__D54go02rWyubXpR66iFQqRnsVOyu/view?usp=sharing",
+          "src": "photos/1Se__D54go02rWyubXpR66iFQqRnsVOyu.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -681,7 +681,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date-5"
         },
         {
-          "src": "https://drive.google.com/file/d/1GlFo6WZx1deL_fv014CkVLjxOs4XtBnl/view?usp=sharing",
+          "src": "photos/1GlFo6WZx1deL_fv014CkVLjxOs4XtBnl.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -689,7 +689,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date-5"
         },
         {
-          "src": "https://drive.google.com/file/d/1_Afu9Rh57lQo_tCYnUxbIvqpWA6sx4N2/view?usp=sharing",
+          "src": "photos/1_Afu9Rh57lQo_tCYnUxbIvqpWA6sx4N2.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -697,7 +697,7 @@ window.PORTFOLIO_DATA = {
           "group": "Random Date-5"
         },
         {
-          "src": "https://drive.google.com/file/d/12iBHtrIOnIRWFJjbKWrHnBaFWA2zQOGA/view?usp=sharing",
+          "src": "photos/12iBHtrIOnIRWFJjbKWrHnBaFWA2zQOGA.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -705,7 +705,7 @@ window.PORTFOLIO_DATA = {
           "group": "Friends Meetup"
         },
         {
-          "src": "https://drive.google.com/file/d/1cFYDlqy2GtbveIDRP2hMJzeeYfzHICsL/view?usp=sharing",
+          "src": "photos/1cFYDlqy2GtbveIDRP2hMJzeeYfzHICsL.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -713,7 +713,7 @@ window.PORTFOLIO_DATA = {
           "group": "Friends Meetup"
         },
         {
-          "src": "https://drive.google.com/file/d/1vSAerGfnW-d5n5U2bDztgqRH5ehRgJNC/view?usp=sharing",
+          "src": "photos/1vSAerGfnW-d5n5U2bDztgqRH5ehRgJNC.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -721,7 +721,7 @@ window.PORTFOLIO_DATA = {
           "group": "Friends Meetup"
         },
         {
-          "src": "https://drive.google.com/file/d/1N0pZBEm6m6w8Cn3v6dMOPNx7VDt5qOcv/view?usp=sharing",
+          "src": "photos/1N0pZBEm6m6w8Cn3v6dMOPNx7VDt5qOcv.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -729,12 +729,204 @@ window.PORTFOLIO_DATA = {
           "group": "Friends Meetup"
         },
         {
-          "src": "https://drive.google.com/file/d/1q4GTbsoBJY0RnXEn08hNdc2dAAXZIbT0/view?usp=sharing",
+          "src": "photos/1q4GTbsoBJY0RnXEn08hNdc2dAAXZIbT0.jpg",
           "caption": "",
           "story": "",
           "place": "",
           "date": "",
           "group": "Friends Meetup"
+        },
+        {
+          "src": "photos/1Ll55NqJQK7z3RmwjBGkMADcAMHaanROY.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Friends Meetup"
+        },
+        {
+          "src": "photos/18z1LiJWOzLGYsyreVLJmiBWSCXSsuFRv.jpg",
+          "caption": "Some random day",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1q391nFS6epCIn2AKDd2kbV99LrSbQbvM.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Cafe"
+        },
+        {
+          "src": "photos/1q3CLLscNm_M8JKaEN2pKfwiRPf7UUyi7.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Cafe"
+        },
+        {
+          "src": "photos/1O4BXl2ctRVwQK1bCtSd8LX2RVMPUpwRn.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Lichi Flower"
+        },
+        {
+          "src": "photos/1mc3sB9fhbE6PRVhXvH5sNi0EW9li6tj3.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Lichi Flower"
+        },
+        {
+          "src": "photos/1wSYn_q5dcg4uZv_O8sCXFD18XOj7oeXa.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Lichi Flower"
+        },
+        {
+          "src": "photos/16atnBbVHMgEA2Zc6LWxL1uDu29a8TtRF.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Lichi Flower"
+        },
+        {
+          "src": "photos/1_0Jvs_J6W5f35jzfEVqtYidxGwPBvkKA.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Lichi Flower"
+        },
+        {
+          "src": "photos/1jf2SNM3RQnvHTLGfpaGXQKWSc9oKF_yf.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-6"
+        },
+        {
+          "src": "photos/1wPajXYR5P_zCnzYvWfOLfQOuTZPIHb_U.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-6"
+        },
+        {
+          "src": "photos/1NaKuLG4jzZgG3IZz3Ru37h0pufEBDYBI.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-6"
+        },
+        {
+          "src": "photos/1e-W0AVjq71wig4wDFARJECzCdmbfiqps.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-6"
+        },
+        {
+          "src": "photos/1cbdoSQk1HtthOU8pcOlh1PAagfIhp2qH.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-7"
+        },
+        {
+          "src": "photos/1qS3QhewuVzYFWNxFKnY46jMT_B5MxIG-.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-7"
+        },
+        {
+          "src": "photos/1YojrD15zorPynhjcaStn9wgetn87H8vN.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Movie Date"
+        },
+        {
+          "src": "photos/1LEFNM5UTxJxWCNNwVfdAWnoGOpdW1lV6.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Movie Date"
+        },
+        {
+          "src": "photos/1ZU5rByZFmVEEZmkqAvt-RE65SERBdfbs.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Movie Date"
+        },
+        {
+          "src": "photos/1_Iq_YpG7HZphDmMH-RbOncVLC0VlSZ4G.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Movie Date"
+        },
+        {
+          "src": "photos/1AhQVlN3hbr-pgeBYOcss9Sw0HPHLYzyo.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Movie Date"
+        },
+        {
+          "src": "photos/1osllG-na2Brf3aE017aoWyTl-yMjjcrf.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-8"
+        },
+        {
+          "src": "photos/15_9p9ur5OHWHn_h-KrPONwB1wJNb4hQI.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-8"
+        },
+        {
+          "src": "photos/12c1pZqsZbSLMJDFfQsA0g04vPcSvv8VT.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-8"
+        },
+        {
+          "src": "photos/11U7MkzvQzRHGvx0Votn8YtAqQHvXV-sV.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-8"
         }
       ]
     },
@@ -746,7 +938,7 @@ window.PORTFOLIO_DATA = {
       "interests": [],
       "photos": [
         {
-          "src": "https://drive.google.com/file/d/1YysXkDpuevlomVSunbW_WW9lqFAuT8-q/view?usp=sharing",
+          "src": "photos/1YysXkDpuevlomVSunbW_WW9lqFAuT8-q.jpg",
           "caption": "Abhivyakti",
           "story": "",
           "place": "",
@@ -754,7 +946,7 @@ window.PORTFOLIO_DATA = {
           "group": "Abhivyakti"
         },
         {
-          "src": "https://drive.google.com/file/d/17bfic7igRy_qIoavyXUNBr_WZ1Co0_rD/view?usp=sharing",
+          "src": "photos/17bfic7igRy_qIoavyXUNBr_WZ1Co0_rD.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -762,7 +954,7 @@ window.PORTFOLIO_DATA = {
           "group": "Abhivyakti"
         },
         {
-          "src": "https://drive.google.com/file/d/10mAPROmeNvDTRSiFEWCvSnJdqVLBkvO-/view?usp=sharing",
+          "src": "photos/10mAPROmeNvDTRSiFEWCvSnJdqVLBkvO-.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -770,7 +962,7 @@ window.PORTFOLIO_DATA = {
           "group": "Sunday Market"
         },
         {
-          "src": "https://drive.google.com/file/d/1QKn8ihUvJXB5jGHDx3bWKPa3ABs11w7E/view?usp=sharing",
+          "src": "photos/1QKn8ihUvJXB5jGHDx3bWKPa3ABs11w7E.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -778,7 +970,7 @@ window.PORTFOLIO_DATA = {
           "group": "Sunday Market"
         },
         {
-          "src": "https://drive.google.com/file/d/1pVDnL_t7blHSGQ5soVhTIIEjzTQ1e6BT/view?usp=sharing",
+          "src": "photos/1pVDnL_t7blHSGQ5soVhTIIEjzTQ1e6BT.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -786,7 +978,7 @@ window.PORTFOLIO_DATA = {
           "group": "Sunday Market"
         },
         {
-          "src": "https://drive.google.com/file/d/14AIhr7jYCzD2RBqysI0vmj0KtaTlrKlk/view?usp=sharing",
+          "src": "photos/14AIhr7jYCzD2RBqysI0vmj0KtaTlrKlk.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -794,7 +986,7 @@ window.PORTFOLIO_DATA = {
           "group": "Sunday Market"
         },
         {
-          "src": "https://drive.google.com/file/d/1mlpplJYlLpg9Fa7XlfySi0EgXZJZgtFp/view?usp=sharing",
+          "src": "photos/1mlpplJYlLpg9Fa7XlfySi0EgXZJZgtFp.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -802,7 +994,7 @@ window.PORTFOLIO_DATA = {
           "group": "Van Gogh Event"
         },
         {
-          "src": "https://drive.google.com/file/d/1Y2eQdb6r_pZoCJgwfmyHjxjp4DuvpeuV/view?usp=sharing",
+          "src": "photos/1Y2eQdb6r_pZoCJgwfmyHjxjp4DuvpeuV.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -810,7 +1002,7 @@ window.PORTFOLIO_DATA = {
           "group": "Van Gogh Event"
         },
         {
-          "src": "https://drive.google.com/file/d/1VrXPQdkHsycVuRXZ_Aoxh-NzxcJoULeI/view?usp=sharing",
+          "src": "photos/1VrXPQdkHsycVuRXZ_Aoxh-NzxcJoULeI.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -818,7 +1010,7 @@ window.PORTFOLIO_DATA = {
           "group": "Van Gogh Event"
         },
         {
-          "src": "https://drive.google.com/file/d/1cz1aeR_kjrwYByg2ipY0qN-8SR2EYJxT/view?usp=sharing",
+          "src": "photos/1cz1aeR_kjrwYByg2ipY0qN-8SR2EYJxT.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -826,7 +1018,7 @@ window.PORTFOLIO_DATA = {
           "group": "Anuv Jain Concert"
         },
         {
-          "src": "https://drive.google.com/file/d/1fCXTIMztXJWqgcScfA576fca3hsZ5aPC/view?usp=sharing",
+          "src": "photos/1fCXTIMztXJWqgcScfA576fca3hsZ5aPC.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -834,7 +1026,7 @@ window.PORTFOLIO_DATA = {
           "group": "Anuv Jain Concert"
         },
         {
-          "src": "https://drive.google.com/file/d/1NxIXACCqfZVsszAB56z7Hj4JPNEPJv47/view?usp=sharing",
+          "src": "photos/1NxIXACCqfZVsszAB56z7Hj4JPNEPJv47.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -842,7 +1034,7 @@ window.PORTFOLIO_DATA = {
           "group": "Anuv Jain Concert"
         },
         {
-          "src": "https://drive.google.com/file/d/1jPq_nT44klIVez2KQ48WkBtuI_Zjozss/view?usp=sharing",
+          "src": "photos/1jPq_nT44klIVez2KQ48WkBtuI_Zjozss.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -850,7 +1042,7 @@ window.PORTFOLIO_DATA = {
           "group": "Anuv Jain Concert"
         },
         {
-          "src": "https://drive.google.com/file/d/1QGwtw9Idq8XnX8cW3GP5K6xec4Vb8x5w/view?usp=sharing",
+          "src": "photos/1QGwtw9Idq8XnX8cW3GP5K6xec4Vb8x5w.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -858,7 +1050,7 @@ window.PORTFOLIO_DATA = {
           "group": "Thol"
         },
         {
-          "src": "https://drive.google.com/file/d/1ersgSfryKcG7rbeFn2EQK5a7HeVGgWb3/view?usp=sharing",
+          "src": "photos/1ersgSfryKcG7rbeFn2EQK5a7HeVGgWb3.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -866,7 +1058,7 @@ window.PORTFOLIO_DATA = {
           "group": "Thol"
         },
         {
-          "src": "https://drive.google.com/file/d/1LpyyOzbJOOCS863zV56DMKFLVBVRULST/view?usp=sharing",
+          "src": "photos/1LpyyOzbJOOCS863zV56DMKFLVBVRULST.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -874,7 +1066,7 @@ window.PORTFOLIO_DATA = {
           "group": "Thol"
         },
         {
-          "src": "https://drive.google.com/file/d/1m7lfzo8-A1SZewbIqTHxDdZBj7ju0wc_/view?usp=sharing",
+          "src": "photos/1m7lfzo8-A1SZewbIqTHxDdZBj7ju0wc_.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -882,7 +1074,7 @@ window.PORTFOLIO_DATA = {
           "group": "Thol"
         },
         {
-          "src": "https://drive.google.com/file/d/1F9104SCGiHg0z5rE6aGQOfLZsxnQPD8d/view?usp=sharing",
+          "src": "photos/1F9104SCGiHg0z5rE6aGQOfLZsxnQPD8d.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -890,7 +1082,7 @@ window.PORTFOLIO_DATA = {
           "group": "Thol"
         },
         {
-          "src": "https://drive.google.com/file/d/1os0jVSHqCsbTmoyYEduvXKKPnQaRfAdy/view?usp=sharing",
+          "src": "photos/1os0jVSHqCsbTmoyYEduvXKKPnQaRfAdy.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -898,7 +1090,7 @@ window.PORTFOLIO_DATA = {
           "group": "Thol"
         },
         {
-          "src": "https://drive.google.com/file/d/1lQIT4-lC0Uul8MqquJUfo13QOZ-SSQxb/view?usp=sharing",
+          "src": "photos/1lQIT4-lC0Uul8MqquJUfo13QOZ-SSQxb.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -906,7 +1098,7 @@ window.PORTFOLIO_DATA = {
           "group": "Thol"
         },
         {
-          "src": "https://drive.google.com/file/d/1o-u8EnXBnT7l5ve8tY_EacN-5nbLvv53/view?usp=sharing",
+          "src": "photos/1o-u8EnXBnT7l5ve8tY_EacN-5nbLvv53.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -914,7 +1106,7 @@ window.PORTFOLIO_DATA = {
           "group": "Carnival"
         },
         {
-          "src": "https://drive.google.com/file/d/1cUoeyokyTqDoWLgFb6_qDGhRXXkeeWns/view?usp=sharing",
+          "src": "photos/1cUoeyokyTqDoWLgFb6_qDGhRXXkeeWns.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -922,7 +1114,7 @@ window.PORTFOLIO_DATA = {
           "group": "Carnival"
         },
         {
-          "src": "https://drive.google.com/file/d/1IBjkVhymEb5Asa6Ob6o3qjJYiXe_q-SR/view?usp=sharing",
+          "src": "photos/1IBjkVhymEb5Asa6Ob6o3qjJYiXe_q-SR.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -930,7 +1122,7 @@ window.PORTFOLIO_DATA = {
           "group": "Carnival"
         },
         {
-          "src": "https://drive.google.com/file/d/13NhJIp-a1cW6_6hWfClJrQo8T1vhzU0Z/view?usp=sharing",
+          "src": "photos/13NhJIp-a1cW6_6hWfClJrQo8T1vhzU0Z.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -938,7 +1130,7 @@ window.PORTFOLIO_DATA = {
           "group": "Carnival"
         },
         {
-          "src": "https://drive.google.com/file/d/1g2gMMCkYQzT6cIVkm2-sbkCRLKJwXAm4/view?usp=sharing",
+          "src": "photos/1g2gMMCkYQzT6cIVkm2-sbkCRLKJwXAm4.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -946,7 +1138,7 @@ window.PORTFOLIO_DATA = {
           "group": "Carnival"
         },
         {
-          "src": "https://drive.google.com/file/d/1_no9C7oEP27pJXLca72YyCW2mDV91Ffk/view?usp=sharing",
+          "src": "photos/1_no9C7oEP27pJXLca72YyCW2mDV91Ffk.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -954,12 +1146,390 @@ window.PORTFOLIO_DATA = {
           "group": "Carnival"
         },
         {
-          "src": "https://drive.google.com/file/d/1jlw1Grl_on_cSrB689PoUV5-Oeo2hoap/view?usp=sharing",
+          "src": "photos/1jlw1Grl_on_cSrB689PoUV5-Oeo2hoap.jpg",
           "caption": "",
           "story": "",
           "place": "",
           "date": "",
           "group": "Carnival"
+        },
+        {
+          "src": "photos/1cScx-yUe7LQoik-8Fmc8tNr4J13aTOeD.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Pickleball"
+        },
+        {
+          "src": "photos/1Ca0YJgZsX4Gm4CLyUE4UmjtizAjtwZc8.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Pickleball"
+        },
+        {
+          "src": "photos/19E-2M8udtTaV8qYA0yI10JhCFSy-CM05.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Pickleball"
+        },
+        {
+          "src": "photos/1EyvOBxFsm3ZGDxWIVLYtA-oBrDmrT-rb.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Amdavad ni Gufa"
+        },
+        {
+          "src": "photos/1OCNwkxQY6XjQl4p1kiKqOtDO363JAkT7.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Amdavad ni Gufa"
+        },
+        {
+          "src": "photos/1w2j3mMxuLGVNdgujO6JvRqE9JoHoC2Va.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Amdavad ni Gufa"
+        },
+        {
+          "src": "photos/1UYvCqnzmKwOfOkh51sBpqi-jB0L1EzVx.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Clay Date"
+        },
+        {
+          "src": "photos/1EJOOCLguWyPxr_zCYgWAiBHFvgsHZBTp.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Clay Date"
+        },
+        {
+          "src": "photos/1zkYX-tvb4dOXoVLYjvmxlHD-qHxIXNUb.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Clay Date"
+        },
+        {
+          "src": "photos/1ILGrKH4khgW3BDLpGL1J1Ci5a-WtWdWt.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Clay Date"
+        },
+        {
+          "src": "photos/1BniARimDDCWWl2On1oqsT4V7r8Akc66Q.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Law Garden"
+        },
+        {
+          "src": "photos/1BvsW6xyt5Bjq0VW_1jG3bC5EqIyBRouP.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Law Garden"
+        },
+        {
+          "src": "photos/1YyLR9d3JMJ9omjJgFkT3JvmeVn13HPJU.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Law Garden"
+        }
+      ]
+    },
+    {
+      "title": "Navratri",
+      "intro": "",
+      "paragraphs": [],
+      "facts": [],
+      "interests": [],
+      "photos": [
+        {
+          "src": "photos/1blvEinhJlYxftUS5rMcFerVvfIM08opF.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day 1"
+        },
+        {
+          "src": "photos/183QEjcUmcH_qhEmnST8pvu3PRxc1goMe.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day 1"
+        },
+        {
+          "src": "photos/1UHUksPhx8WyRtYbu-3Xo87XJIclXacgf.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day 1"
+        },
+        {
+          "src": "photos/1BvMMf71x85Xt5of0JdjWQzqr3nMX1WA-.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day 1"
+        },
+        {
+          "src": "photos/16fR5Uwflaq9qdd470BHHBxza_peDvJ1X.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day 1"
+        },
+        {
+          "src": "photos/1K2ShDPSKAlLiYGsc7XcoUpm7g3d4RbM4.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day 1"
+        },
+        {
+          "src": "photos/13eRmPShiZ6QTmp7uQnTGm3hIzXui3TIw.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-3"
+        },
+        {
+          "src": "photos/1G3e7mzl0bgLTzv3Ij7u0eJ32g_2_tVhl.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-3"
+        },
+        {
+          "src": "photos/1WNYhrQgQa3rywLNnIDSu7KlrnziGCCWU.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-3"
+        },
+        {
+          "src": "photos/1ot8cInT2aOVRxesKTnkLJqH9Eaaxy-N6.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-3"
+        },
+        {
+          "src": "photos/1GabKv8KSpWsnjTYyE21F4J2k0qW0T6Wp.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-3"
+        },
+        {
+          "src": "photos/1xX00lf7gyfp4m7KC63lLSxLTjaSVb9L4.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-3"
+        },
+        {
+          "src": "photos/1n7XoDGC1VJ3PV4LX5kxT0sDvR3ZBtvZu.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-3"
+        },
+        {
+          "src": "photos/1uTXAwaWLxm9Zfby6sJeOjucJoRCRZ0cO.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-5"
+        },
+        {
+          "src": "photos/10CAuH59JZbQgLt4jxKTJj3My0Z129so-.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-5"
+        },
+        {
+          "src": "photos/1tEUQ0sZRN9mpqP7rxXSoa_HHiybn1dir.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-5"
+        },
+        {
+          "src": "photos/1pGUyOHjQHy39HjURL5VpqsGqvE8QS_39.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-6"
+        },
+        {
+          "src": "photos/1cRsPpACiEPHGruShV3qXPHAig5cRBPQj.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-6"
+        },
+        {
+          "src": "photos/1xj8XyhcfMv-LYp5CsQZGLIGzjQ7AF1b5.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-6"
+        },
+        {
+          "src": "photos/1EUL3fKfu_gyiDIfaP84fN90GA2Se09DK.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-9"
+        },
+        {
+          "src": "photos/1WAa_Jaw3v1QQ3jjESL7W61DQJngwQHCd.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-9"
+        },
+        {
+          "src": "photos/1hb8-38OQWlV3SgIZcCaZAmMiCF12oGgx.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-10"
+        },
+        {
+          "src": "photos/1eBrYAfaDiwldlV8n0SPI3SUdtNLDyhPq.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-10"
+        },
+        {
+          "src": "photos/1_-lmrCJqrQtMgxmreSLGnLvcqsB00Oo-.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-10"
+        },
+        {
+          "src": "photos/1tLfyDF4W240ZfHqG-zeMFhwmHO9NoK8g.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day 10"
+        },
+        {
+          "src": "photos/1qEFYqECNU4FZJVpTyk-imf4dR1ZRRouO.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day 10"
+        },
+        {
+          "src": "photos/1C6r8M40EogT0a7oXbcfPysGp3hPpGQ7y.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day 10"
+        }
+      ]
+    },
+    {
+      "title": "Prarthna & My Family",
+      "intro": "The moments that mean the most.",
+      "paragraphs": [],
+      "facts": [],
+      "interests": [],
+      "photos": [
+        {
+          "src": "photos/1dhufRIOh-UffAum0n55x-M9jG2BHadO9.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "First Family Meetup"
+        },
+        {
+          "src": "photos/1Zl8G8HtiV9JUjWuGEhVjRVURbSzVIqmO.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "First Family Meetup"
+        },
+        {
+          "src": "photos/1zSpzaaUbq9hBYfNnVG3M5B2WWjuwaagW.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "First Family Meetup"
+        },
+        {
+          "src": "photos/1LL7KC2k_u10Vb1LYERIgrY1nnWmVsRvZ.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "First Family Meetup"
+        },
+        {
+          "src": "photos/1p36ZISlqbMJpJJ8mJN0Y4W9TYZiX4eWB.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "First Family Meetup"
         }
       ]
     },
@@ -971,7 +1541,7 @@ window.PORTFOLIO_DATA = {
       "interests": [],
       "photos": [
         {
-          "src": "https://drive.google.com/file/d/1HiauziKrDgHsKIsZRytRBnQn44A_KnUA/view?usp=sharing",
+          "src": "photos/1HiauziKrDgHsKIsZRytRBnQn44A_KnUA.jpg",
           "caption": "Sandwich",
           "story": "",
           "place": "",
@@ -979,7 +1549,7 @@ window.PORTFOLIO_DATA = {
           "group": ""
         },
         {
-          "src": "https://drive.google.com/file/d/13RNwlKKQ8E0OGFWREuQGqWYPcmO6fs_S/view?usp=sharing",
+          "src": "photos/13RNwlKKQ8E0OGFWREuQGqWYPcmO6fs_S.jpg",
           "caption": "Dhokla",
           "story": "",
           "place": "",
@@ -989,30 +1559,6 @@ window.PORTFOLIO_DATA = {
       ]
     },
     {
-      "title": "Twinning",
-      "intro": "When we accidentally (or not) matched.",
-      "paragraphs": [],
-      "facts": [],
-      "interests": [],
-      "photos": []
-    },
-    {
-      "title": "Playdates",
-      "intro": "Our fun, silly, favourite days out.",
-      "paragraphs": [],
-      "facts": [],
-      "interests": [],
-      "photos": []
-    },
-    {
-      "title": "Prarthna & My Family",
-      "intro": "The moments that mean the most.",
-      "paragraphs": [],
-      "facts": [],
-      "interests": [],
-      "photos": []
-    },
-    {
       "title": "Other Activities I love",
       "intro": "",
       "paragraphs": [],
@@ -1020,14 +1566,14 @@ window.PORTFOLIO_DATA = {
       "interests": [],
       "photos": [
         {
-          "src": "https://drive.google.com/file/d/1A_II_ZtLgsVk_rPNr-TTzvi8TF3w1uaY/view?usp=drive_link",
+          "src": "photos/1A_II_ZtLgsVk_rPNr-TTzvi8TF3w1uaY.jpg",
           "caption": "",
           "story": "Made drawing of my favorite anime",
           "place": "",
           "date": "2020"
         },
         {
-          "src": "https://drive.google.com/file/d/115Swy5BP8lZQ74LNmU0t3zmw0gfiRXRH/view?usp=drive_link",
+          "src": "photos/115Swy5BP8lZQ74LNmU0t3zmw0gfiRXRH.jpg",
           "caption": "",
           "story": "Drawing of my favorite anime",
           "place": "",
