@@ -415,14 +415,16 @@ window.PORTFOLIO_DATA = {
           "caption": "First time at Kankaria",
           "story": "",
           "place": "",
-          "date": "Oct 2025"
+          "date": "Oct 2025",
+          "group": "First Time at Kankaria"
         },
         {
           "src": "https://drive.google.com/file/d/11c2D1l6s5hfL_j12mmilGQO6590lHz57/view?usp=sharing",
           "caption": "",
           "story": "",
           "place": "",
-          "date": ""
+          "date": "",
+          "group": "First Time at Kankaria"
         },
         {
           "src": "https://drive.google.com/file/d/1cLOd5zwAjYnwazRVQLw1RflijCYBXaUi/view?usp=sharing",
@@ -433,31 +435,35 @@ window.PORTFOLIO_DATA = {
         },
         {
           "src": "https://drive.google.com/file/d/12s0qATyX7DwOncgzUrf7vlBeiW_j9e2J/view?usp=sharing",
-          "caption": "My Birthday",
+          "caption": "",
           "story": "",
           "place": "",
-          "date": ""
+          "date": "",
+          "group": "My Birthday"
         },
         {
           "src": "https://drive.google.com/file/d/1Hkin5cBVYQcYAjXMKtKkgNX95IgsGsOr/view?usp=sharing",
           "caption": "",
           "story": "",
           "place": "",
-          "date": ""
+          "date": "",
+          "group": "My Birthday"
         },
         {
           "src": "https://drive.google.com/file/d/13rGUlUlA8gOWPYMBd70XSaJtCXg1E-Zr/view?usp=sharing",
-          "caption": "First Selfie Together",
+          "caption": "",
           "story": "",
           "place": "",
-          "date": ""
+          "date": "",
+          "group": "My Birthday"
         },
         {
           "src": "https://drive.google.com/file/d/1iJ8vUGBTvBkkRFkKr0SC8DAVRtMDijNx/view?usp=sharing",
-          "caption": "Balloon Shooting",
+          "caption": "",
           "story": "",
           "place": "",
-          "date": ""
+          "date": "",
+          "group": "My Birthday"
         },
         {
           "src": "https://drive.google.com/file/d/1NEZkmDVqpbYaV5S3EyXT7VHCwlVXcMN4/view?usp=sharing",
@@ -465,6 +471,270 @@ window.PORTFOLIO_DATA = {
           "story": "",
           "place": "Ahmedabad",
           "date": "Nov 2025"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1x9aFJ2sDywdJbk61vcvshSjr9USgedb2/view?usp=sharing",
+          "caption": "Princess Day",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "https://drive.google.com/file/d/1m5iOQQU2zv4xDQZks6tGxsqSu16KgsTr/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Prarthna bday"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1aCwPtWuoq0DsCdVUUd7OTro-TNVk9YIH/view?usp=sharing",
+          "caption": "Sweater gift",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "https://drive.google.com/file/d/1YlvUlJhU43wHYNxe5Z-5-7_g8s5-KJ9w/view?usp=sharing",
+          "caption": "Online Games",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "https://drive.google.com/file/d/1GTEpXvFuHMCjGK_G8n7ysJAWGDE9uxFR/view?usp=sharing",
+          "caption": "Drawing by me",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "https://drive.google.com/file/d/1kXNJuZIzXxswxuINBiMXH57gXaPDE1x4/view?usp=sharing",
+          "caption": "Paper flowers by me",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "https://drive.google.com/file/d/1hAqNWC9-agz6f7zq9qJJGn1xLgqNqfGb/view?usp=sharing",
+          "caption": "Went to University to submit papers",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "https://drive.google.com/file/d/13pQNGHF1CZ0MD_hEd5YIOWkM87xGadbz/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "https://drive.google.com/file/d/1ftEeG9RhFxiAdFGjkaAXEEOjuR_lPNnV/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "https://drive.google.com/file/d/1744eoYtxPVK1NlU5OAPSjj0m5I9qSLqO/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Clay Date"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1b49hz-U29l2quT5bKq-9V8bpiA9pyvSS/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Clay Date"
+        },
+        {
+          "src": "https://drive.google.com/file/d/10wdLkSiwXIj88b92AKbYIlAcTAB3piDT/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1T6M0E3MOrjUr69J_dP5yHn6lQ4d-GETr/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1iyjn7Z97mYEwmE6P4JvrKqoYnnJUaMgy/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1cX_RdD7Xw_NYq5KWiaRtcrS883OIHgqA/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-2"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1BeVBhJO39AsExmZ3NkFh_afoQ6nnfHP2/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-2"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1-n2mCboz--Hr4uYVoYPtBpddmQzrmAHL/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-2"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1nru6jhvbj4dWz46HpwgO6hiavZLFkOKq/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-3"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1M_HiJVbsBuuLR3Ef0rpe9Ux_UA-nLTrc/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-3"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1SdraacYIE-rJdcXa2fqhOAxnHpxOAMHU/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-3"
+        },
+        {
+          "src": "https://drive.google.com/file/d/17-bMHRewFeb4l9yhIcZeTAJ1OtdrvfuK/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-3"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1lUTkvXKcD-g26hmLJNMhl13XC5ZzYDu6/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-3"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1_Etpo0hwSGSdwDuuyjiVT_DepfSTXDSS/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-4"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1Lszf6SmlODJXWnuoN2Hm5QEHmDXZDQMc/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-4"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1ahTHgLxZ8BN-MITI8TwzrnCB6RNjdd7c/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-4"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1Se__D54go02rWyubXpR66iFQqRnsVOyu/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-5"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1GlFo6WZx1deL_fv014CkVLjxOs4XtBnl/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-5"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1_Afu9Rh57lQo_tCYnUxbIvqpWA6sx4N2/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Date-5"
+        },
+        {
+          "src": "https://drive.google.com/file/d/12iBHtrIOnIRWFJjbKWrHnBaFWA2zQOGA/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Friends Meetup"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1cFYDlqy2GtbveIDRP2hMJzeeYfzHICsL/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Friends Meetup"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1vSAerGfnW-d5n5U2bDztgqRH5ehRgJNC/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Friends Meetup"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1N0pZBEm6m6w8Cn3v6dMOPNx7VDt5qOcv/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Friends Meetup"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1q4GTbsoBJY0RnXEn08hNdc2dAAXZIbT0/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Friends Meetup"
         }
       ]
     },
@@ -480,7 +750,216 @@ window.PORTFOLIO_DATA = {
           "caption": "Abhivyakti",
           "story": "",
           "place": "",
-          "date": ""
+          "date": "",
+          "group": "Abhivyakti"
+        },
+        {
+          "src": "https://drive.google.com/file/d/17bfic7igRy_qIoavyXUNBr_WZ1Co0_rD/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Abhivyakti"
+        },
+        {
+          "src": "https://drive.google.com/file/d/10mAPROmeNvDTRSiFEWCvSnJdqVLBkvO-/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Sunday Market"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1QKn8ihUvJXB5jGHDx3bWKPa3ABs11w7E/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Sunday Market"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1pVDnL_t7blHSGQ5soVhTIIEjzTQ1e6BT/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Sunday Market"
+        },
+        {
+          "src": "https://drive.google.com/file/d/14AIhr7jYCzD2RBqysI0vmj0KtaTlrKlk/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Sunday Market"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1mlpplJYlLpg9Fa7XlfySi0EgXZJZgtFp/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Van Gogh Event"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1Y2eQdb6r_pZoCJgwfmyHjxjp4DuvpeuV/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Van Gogh Event"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1VrXPQdkHsycVuRXZ_Aoxh-NzxcJoULeI/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Van Gogh Event"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1cz1aeR_kjrwYByg2ipY0qN-8SR2EYJxT/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Anuv Jain Concert"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1fCXTIMztXJWqgcScfA576fca3hsZ5aPC/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Anuv Jain Concert"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1NxIXACCqfZVsszAB56z7Hj4JPNEPJv47/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Anuv Jain Concert"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1jPq_nT44klIVez2KQ48WkBtuI_Zjozss/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Anuv Jain Concert"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1QGwtw9Idq8XnX8cW3GP5K6xec4Vb8x5w/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Thol"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1ersgSfryKcG7rbeFn2EQK5a7HeVGgWb3/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Thol"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1LpyyOzbJOOCS863zV56DMKFLVBVRULST/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Thol"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1m7lfzo8-A1SZewbIqTHxDdZBj7ju0wc_/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Thol"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1F9104SCGiHg0z5rE6aGQOfLZsxnQPD8d/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Thol"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1os0jVSHqCsbTmoyYEduvXKKPnQaRfAdy/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Thol"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1lQIT4-lC0Uul8MqquJUfo13QOZ-SSQxb/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Thol"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1o-u8EnXBnT7l5ve8tY_EacN-5nbLvv53/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Carnival"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1cUoeyokyTqDoWLgFb6_qDGhRXXkeeWns/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Carnival"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1IBjkVhymEb5Asa6Ob6o3qjJYiXe_q-SR/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Carnival"
+        },
+        {
+          "src": "https://drive.google.com/file/d/13NhJIp-a1cW6_6hWfClJrQo8T1vhzU0Z/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Carnival"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1g2gMMCkYQzT6cIVkm2-sbkCRLKJwXAm4/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Carnival"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1_no9C7oEP27pJXLca72YyCW2mDV91Ffk/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Carnival"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1jlw1Grl_on_cSrB689PoUV5-Oeo2hoap/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Carnival"
         }
       ]
     },
@@ -490,7 +969,24 @@ window.PORTFOLIO_DATA = {
       "paragraphs": [],
       "facts": [],
       "interests": [],
-      "photos": []
+      "photos": [
+        {
+          "src": "https://drive.google.com/file/d/1HiauziKrDgHsKIsZRytRBnQn44A_KnUA/view?usp=sharing",
+          "caption": "Sandwich",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "https://drive.google.com/file/d/13RNwlKKQ8E0OGFWREuQGqWYPcmO6fs_S/view?usp=sharing",
+          "caption": "Dhokla",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        }
+      ]
     },
     {
       "title": "Twinning",
