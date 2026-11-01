@@ -13,7 +13,7 @@
   function photoCard(p, i) {
     const metaBits = [p.place, p.date].filter(has).join(" · ");
     const img = has(p.src)
-      ? `<span class="tape"></span><div class="photo"><img loading="lazy" src="${esc(resolvePhotoSrc(p.src))}" alt="${esc(p.caption || "")}"></div>`
+      ? `<span class="tape"></span><div class="photo"><img loading="lazy" referrerpolicy="no-referrer" src="${esc(resolvePhotoSrc(p.src))}" alt="${esc(p.caption || "")}"></div>`
       : `<div class="photo photo--empty">add a photo</div>`;
     const cap = (has(p.caption) || has(metaBits))
       ? `<figcaption>${esc(p.caption || "")}${has(metaBits) ? `<span class="meta">${esc(metaBits)}</span>` : ""}</figcaption>`

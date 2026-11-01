@@ -148,7 +148,7 @@
     pick.appendChild(file);
     row.append(input, pick); wrap.appendChild(row);
 
-    const preview = el("img", "photo-preview"); preview.style.display = "none"; wrap.appendChild(preview);
+    const preview = el("img", "photo-preview"); preview.style.display = "none"; preview.referrerPolicy = "no-referrer"; wrap.appendChild(preview);
     wrap.appendChild(el("p", "hint", "Use a file in the <b>photos/</b> folder, <b>or</b> paste a Google&nbsp;Drive link (“Anyone with the link”)."));
     function updatePreview() {
       if (obj[key]) { preview.src = resolvePhotoSrc(obj[key]); preview.style.display = "block"; preview.onerror = () => { preview.style.display = "none"; }; }
