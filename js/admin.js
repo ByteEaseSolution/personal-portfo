@@ -222,7 +222,8 @@
         extra.appendChild(el("summary", null, "Facts & tags (optional)"));
         const eb = el("div", "sec-body");
         eb.appendChild(objectList(ch.facts, "Facts",
-          [{ key: "label", label: "Label", placeholder: "e.g. Born" }, { key: "value", label: "Value" }],
+          [{ key: "label", label: "Label", placeholder: "e.g. Born" },
+           { key: "value", label: "Value (Enter / Ctrl+Enter for a new line)", area: true, rows: 2 }],
           () => ({ label: "", value: "" })));
         eb.appendChild(stringList(ch.interests, "Tags", "e.g. Travel"));
         extra.appendChild(eb);

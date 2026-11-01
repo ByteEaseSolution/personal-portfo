@@ -37,7 +37,7 @@
     if (paras.length) body += `<div class="prose">${paras.map((p) => `<p>${esc(p)}</p>`).join("")}</div>`;
     if (facts.length) {
       body += `<dl class="facts facts--card">${facts
-        .map((f) => `<div class="fact"><dt>${esc(f.label)}</dt><dd>${esc(f.value)}</dd></div>`)
+        .map((f) => `<div class="fact"><dt>${esc(f.label)}</dt><dd>${esc(f.value).replace(/\n/g, "<br>")}</dd></div>`)
         .join("")}</dl>`;
     }
     if (tags.length) {
