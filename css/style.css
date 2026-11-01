@@ -119,6 +119,17 @@ img { max-width: 100%; display: block; }
 
 .lead { font-size: 1.3rem; color: var(--ink-soft); }
 .lead.center { text-align: center; max-width: 60ch; margin: 0 auto 2rem; font-style: italic; }
+
+/* chapter prose (paragraphs) */
+.prose { max-width: 64ch; margin: 0 auto 1.8rem; }
+.prose p { margin: 0 0 1rem; }
+
+/* per-photo backstory */
+.photo-story {
+  font-family: var(--serif); font-size: 1rem; line-height: 1.55;
+  color: var(--ink-soft); margin: 0; padding: 0 .5rem .9rem; text-align: left;
+}
+.chips.center { justify-content: center; margin: 0 auto 2rem; max-width: 60ch; }
 .note { text-align: center; font-style: italic; color: var(--ink-soft); max-width: 60ch; margin: 2rem auto 0; }
 .mini-head { font-family: var(--sans); font-size: .9rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-2); margin: 1.4rem 0 .5rem; }
 .empty-hint, .photo--empty { color: var(--ink-soft); font-style: italic; text-align: center; }
@@ -172,7 +183,7 @@ img { max-width: 100%; display: block; }
 
 /* ---------- culture ---------- */
 .culture-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 2.5rem; align-items: start; }
-.facts--card { background: var(--card); padding: 1.3rem 1.5rem; border-radius: 6px; box-shadow: var(--shadow-sm); grid-template-columns: 1fr; }
+.facts--card { background: var(--card); padding: 1.3rem 1.7rem; border-radius: 8px; box-shadow: var(--shadow-sm); grid-template-columns: 1fr 1fr; gap: .4rem 1.8rem; max-width: 640px; margin: 0 auto 2rem; }
 
 /* ---------- timeline ---------- */
 .timeline { position: relative; max-width: 720px; margin: 0 auto; padding-left: 1.5rem; }
@@ -186,7 +197,7 @@ img { max-width: 100%; display: block; }
 .tl-photo { margin-top: .9rem; max-width: 260px; }
 
 /* ---------- scrapbook gallery ---------- */
-.scrapbook { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 2rem 1.6rem; }
+.scrapbook { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 2.2rem 1.8rem; }
 .scrapbook .polaroid { align-self: start; }
 
 /* ---------- videos ---------- */
@@ -211,8 +222,26 @@ footer { text-align: center; padding: 2rem 1rem; color: var(--ink-soft); font-si
 
 /* ---------- responsive ---------- */
 @media (max-width: 760px) {
-  .about-grid, .split, .culture-grid { grid-template-columns: 1fr; }
-  .about-photo, .split-media { max-width: 320px; margin: 0 auto; }
-  .facts { grid-template-columns: 1fr; }
+  .facts, .facts--card { grid-template-columns: 1fr; }
   #nav-links { display: none; }
 }
+
+/* ---------- PDF loading overlay ---------- */
+#pdf-overlay {
+  position: fixed; inset: 0; z-index: 200; display: none;
+  align-items: center; justify-content: center;
+  background: rgba(70, 40, 58, 0.45); backdrop-filter: blur(4px);
+}
+#pdf-overlay.show { display: flex; }
+.pdf-overlay-card {
+  background: var(--card); border-radius: 14px; padding: 2rem 2.4rem; text-align: center;
+  box-shadow: var(--shadow); max-width: 320px; border-top: 4px solid var(--accent);
+}
+.pdf-overlay-card p { font-family: var(--hand); font-size: 1.8rem; color: var(--accent); margin: .6rem 0 .2rem; }
+.pdf-overlay-card span { font-family: var(--sans); font-size: .85rem; color: var(--ink-soft); }
+.pdf-spinner {
+  width: 42px; height: 42px; margin: 0 auto; border-radius: 50%;
+  border: 4px solid var(--paper-2); border-top-color: var(--accent);
+  animation: spin 0.9s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }

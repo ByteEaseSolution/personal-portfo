@@ -22,7 +22,7 @@
   .tilt { transform: none !important; }
 
   /* Hide screen-only chrome */
-  .topbar, .cover-scroll, .btn-pdf, #nav-links, footer, #videos { display: none !important; }
+  .topbar, .cover-scroll, .btn-pdf, #nav-links, footer, #videos, #pdf-overlay { display: none !important; }
 
   /* Make colours & backgrounds actually print */
   .polaroid, .tl-card, .member, .closing-card, .facts--card, .chip,
@@ -68,6 +68,16 @@
   .section-title { font-size: 2.1rem !important; }
   .lead { font-size: 1.2rem; }
   .lead.center { margin-bottom: 6mm; }
+
+  /* chapter prose + per-photo backstory */
+  .prose { max-width: 150mm; margin: 0 auto 5mm; }
+  .prose p { margin: 0 0 3mm; }
+  .facts--card { max-width: 150mm; margin: 0 auto 5mm; }
+  .chips.center { max-width: 150mm; margin: 0 auto 5mm; }
+  .photo-story {
+    font-size: 1rem; line-height: 1.45; color: #6b4a5a;
+    padding: 0 1mm 2mm; text-align: left;
+  }
 
   /* keep blocks whole */
   .polaroid, .member, .tl-item, .closing-card, .facts--card, .fact, .video-card {

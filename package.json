@@ -1,0 +1,13 @@
+{
+  "name": "samir-personal-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal portfolio — scrollable scrapbook site with a decorated, server-rendered PDF.",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@sparticuz/chromium": "^131.0.0",
+    "puppeteer-core": "^23.0.0"
+  }
+}

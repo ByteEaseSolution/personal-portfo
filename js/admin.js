@@ -1,13 +1,11 @@
 /* ===========================================================================
-   Simple in-browser editor.
-   Edits a working copy of the portfolio data, saves it to the browser for
-   instant preview on index.html, and lets you download an updated data.js
-   to keep with the site (so it travels when you share the folder).
+   In-browser editor (chapter-based). Auto-saves to this browser for preview;
+   use "Download data.js" to keep changes with the site (so they travel).
    =========================================================================== */
 
 (function () {
-  // Working copy (never mutate the shipped defaults directly).
   let data = loadPortfolioData();
+  ensureShape(data);
 
   const $ = (sel, el = document) => el.querySelector(sel);
   const el = (tag, cls, html) => {
@@ -17,42 +15,63 @@
     return n;
   };
 
-  /* ---- path helpers: "gallery.photos.0.caption" ---- */
-  function getByPath(obj, path) {
-    return path.split(".").reduce((o, k) => (o == null ? o : o[k]), obj);
+  /* ---- make sure expected arrays/objects exist ---- */
+  function ensureArrays(ch) {
+    if (!Array.isArray(ch.paragraphs)) ch.paragraphs = [];
+    if (!Array.isArray(ch.facts)) ch.facts = [];
+    if (!Array.isArray(ch.interests)) ch.interests = [];
+    if (!Array.isArray(ch.photos)) ch.photos = [];
   }
-  function setByPath(obj, path, val) {
-    const keys = path.split(".");
-    const last = keys.pop();
-    let o = obj;
-    for (const k of keys) { if (o[k] == null) o[k] = {}; o = o[k]; }
-    o[last] = val;
+  function ensureShape(d) {
+    if (!d.meta) d.meta = { name: "", tagline: "", coverPhoto: "" };
+    if (!Array.isArray(d.chapters)) d.chapters = [];
+    d.chapters.forEach(ensureArrays);
+    if (!d.closing) d.closing = { heading: "Thank you", text: [], signoff: "" };
+    if (!Array.isArray(d.closing.text)) d.closing.text = [];
+  }
+  function emptyChapter() {
+    return { title: "New section", intro: "", paragraphs: [], facts: [], interests: [], photos: [] };
+  }
+  function emptyPhoto() { return { src: "", caption: "", story: "", place: "", date: "" }; }
+
+  /* ---- autosave ---- */
+  function setStatus(text, cls) {
+    const s = $("#status");
+    if (!s) return;
+    s.textContent = text;
+    s.className = "status " + (cls || "");
+  }
+  let saveTimer = null;
+  function scheduleAutosave() {
+    setStatus("Saving…", "saving");
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(() => {
+      const ok = savePortfolioData(data);
+      setStatus(ok ? "✓ All changes saved" : "⚠ Storage full — use Download data.js", ok ? "saved" : "err");
+    }, 500);
   }
 
-  /* ---- field builders ---- */
-  function textField(path, label, opts = {}) {
+  /* ---- field builders (operate on an object/array reference) ---- */
+  function textInput(obj, key, label, opts = {}) {
     const wrap = el("label", "fld");
     wrap.appendChild(el("span", "fld-label", label));
     const input = opts.area ? el("textarea") : el("input");
     if (!opts.area) input.type = "text";
-    if (opts.rows) input.rows = opts.rows;
+    if (opts.area) input.rows = opts.rows || 3;
     if (opts.placeholder) input.placeholder = opts.placeholder;
-    input.value = getByPath(data, path) ?? "";
-    input.addEventListener("input", () => setByPath(data, path, input.value));
+    input.value = obj[key] ?? "";
+    input.addEventListener("input", () => { obj[key] = input.value; });
     wrap.appendChild(input);
     return wrap;
   }
 
-  /* A simple editor for an array of plain strings (interests, values, etc.) */
-  function stringListEditor(arrPath, label, placeholder) {
+  function stringList(arr, label, placeholder) {
     const box = el("div", "sublist");
     box.appendChild(el("h4", "sublist-head", label));
-    const list = el("div", "sublist-items");
+    const list = el("div");
     box.appendChild(list);
-
     function render() {
       list.innerHTML = "";
-      const arr = getByPath(data, arrPath) || [];
       arr.forEach((val, i) => {
         const row = el("div", "row");
         const input = el("input");
@@ -60,88 +79,56 @@
         input.value = val ?? "";
         input.placeholder = placeholder || "";
         input.addEventListener("input", () => { arr[i] = input.value; });
-        const del = el("button", "mini danger", "✕");
-        del.type = "button";
-        del.onclick = () => { arr.splice(i, 1); render(); };
+        const del = el("button", "mini danger", "✕"); del.type = "button";
+        del.onclick = () => { arr.splice(i, 1); render(); scheduleAutosave(); };
         row.append(input, del);
         list.appendChild(row);
       });
-      const add = el("button", "mini add", "+ Add");
-      add.type = "button";
-      add.onclick = () => {
-        if (!getByPath(data, arrPath)) setByPath(data, arrPath, []);
-        getByPath(data, arrPath).push("");
-        render();
-      };
+      const add = el("button", "mini add", "+ Add"); add.type = "button";
+      add.onclick = () => { arr.push(""); render(); scheduleAutosave(); };
       list.appendChild(add);
     }
     render();
     return box;
   }
 
-  /* An editor for an array of objects. `fields` describe each object's inputs. */
-  function objectListEditor(arrPath, label, fields, makeEmpty, hint) {
+  function objectList(arr, label, fields, makeEmpty, hint) {
     const box = el("div", "sublist");
     box.appendChild(el("h4", "sublist-head", label));
     if (hint) box.appendChild(el("p", "hint", hint));
     const list = el("div");
     box.appendChild(list);
-
     function render() {
       list.innerHTML = "";
-      const arr = getByPath(data, arrPath) || [];
       arr.forEach((item, i) => {
         const card = el("div", "item-card");
         const head = el("div", "item-card-head");
         head.appendChild(el("span", "item-num", "#" + (i + 1)));
         const ctrls = el("div", "item-ctrls");
         const up = el("button", "mini", "↑"); up.type = "button";
-        up.onclick = () => { if (i > 0) { [arr[i-1], arr[i]] = [arr[i], arr[i-1]]; render(); } };
+        up.onclick = () => { if (i > 0) { [arr[i-1], arr[i]] = [arr[i], arr[i-1]]; render(); scheduleAutosave(); } };
         const down = el("button", "mini", "↓"); down.type = "button";
-        down.onclick = () => { if (i < arr.length-1) { [arr[i+1], arr[i]] = [arr[i], arr[i+1]]; render(); } };
-        const del = el("button", "mini danger", "✕ Remove"); del.type = "button";
-        del.onclick = () => { arr.splice(i, 1); render(); };
-        ctrls.append(up, down, del);
-        head.appendChild(ctrls);
-        card.appendChild(head);
-
-        fields.forEach(f => {
-          if (f.type === "photo") {
-            card.appendChild(photoField(item, f.key, f.label));
-          } else {
-            const wrap = el("label", "fld");
-            wrap.appendChild(el("span", "fld-label", f.label));
-            const input = f.area ? el("textarea") : el("input");
-            if (!f.area) input.type = "text";
-            if (f.area) input.rows = 3;
-            if (f.placeholder) input.placeholder = f.placeholder;
-            input.value = item[f.key] ?? "";
-            input.addEventListener("input", () => { item[f.key] = input.value; });
-            wrap.appendChild(input);
-            card.appendChild(wrap);
-          }
+        down.onclick = () => { if (i < arr.length-1) { [arr[i+1], arr[i]] = [arr[i], arr[i+1]]; render(); scheduleAutosave(); } };
+        const del = el("button", "mini danger", "✕"); del.type = "button";
+        del.onclick = () => { arr.splice(i, 1); render(); scheduleAutosave(); };
+        ctrls.append(up, down, del); head.appendChild(ctrls); card.appendChild(head);
+        fields.forEach((f) => {
+          if (f.type === "photo") card.appendChild(photoInput(item, f.key, f.label));
+          else card.appendChild(textInput(item, f.key, f.label, { area: f.area, rows: f.rows, placeholder: f.placeholder }));
         });
         list.appendChild(card);
       });
-      const add = el("button", "mini add", "+ Add " + (label.replace(/s$/, "") || "item"));
-      add.type = "button";
-      add.onclick = () => {
-        if (!getByPath(data, arrPath)) setByPath(data, arrPath, []);
-        getByPath(data, arrPath).push(makeEmpty());
-        render();
-      };
+      const add = el("button", "mini add", "+ Add"); add.type = "button";
+      add.onclick = () => { arr.push(makeEmpty()); render(); scheduleAutosave(); };
       list.appendChild(add);
     }
     render();
     return box;
   }
 
-  /* Photo field: pick a file -> fills "photos/<name>" and shows a live preview.
-     The actual image file must be placed in the photos/ folder. */
-  function photoField(obj, key, label) {
+  function photoInput(obj, key, label) {
     const wrap = el("div", "fld");
     wrap.appendChild(el("span", "fld-label", label || "Photo"));
-
     const row = el("div", "photo-row");
     const input = el("input");
     input.type = "text";
@@ -150,29 +137,19 @@
     input.addEventListener("input", () => { obj[key] = input.value; updatePreview(); });
 
     const pick = el("label", "mini pick", "Choose file…");
-    const file = el("input");
-    file.type = "file";
-    file.accept = "image/*";
-    file.style.display = "none";
+    const file = el("input"); file.type = "file"; file.accept = "image/*"; file.style.display = "none";
     file.addEventListener("change", () => {
-      const f = file.files[0];
-      if (!f) return;
-      obj[key] = "photos/" + f.name;
-      input.value = obj[key];
+      const f = file.files[0]; if (!f) return;
+      obj[key] = "photos/" + f.name; input.value = obj[key];
       const reader = new FileReader();
       reader.onload = () => { preview.src = reader.result; preview.style.display = "block"; };
       reader.readAsDataURL(f);
     });
     pick.appendChild(file);
+    row.append(input, pick); wrap.appendChild(row);
 
-    row.append(input, pick);
-    wrap.appendChild(row);
-
-    const preview = el("img", "photo-preview");
-    preview.style.display = "none";
-    wrap.appendChild(preview);
-    wrap.appendChild(el("p", "hint", "Use a local file in the <b>photos/</b> folder, <b>or</b> paste a Google&nbsp;Drive link (set it to “Anyone with the link”)."));
-
+    const preview = el("img", "photo-preview"); preview.style.display = "none"; wrap.appendChild(preview);
+    wrap.appendChild(el("p", "hint", "Use a file in the <b>photos/</b> folder, <b>or</b> paste a Google&nbsp;Drive link (“Anyone with the link”)."));
     function updatePreview() {
       if (obj[key]) { preview.src = resolvePhotoSrc(obj[key]); preview.style.display = "block"; preview.onerror = () => { preview.style.display = "none"; }; }
     }
@@ -180,118 +157,88 @@
     return wrap;
   }
 
-  /* ---- build the whole form ---- */
+  /* ---- chapter editor ---- */
+  function chapterEditor(chapters) {
+    const list = el("div");
+    function render() {
+      list.innerHTML = "";
+      chapters.forEach((ch, i) => {
+        ensureArrays(ch);
+        const d = el("details", "sec sec--chapter");
+        d.appendChild(el("summary", null, (i + 1) + ". " + (ch.title || "Untitled section")));
+        const body = el("div", "sec-body");
+
+        const ctrls = el("div", "chapter-ctrls");
+        const up = el("button", "mini", "↑ Up"); up.type = "button";
+        up.onclick = () => { if (i > 0) { [chapters[i-1], chapters[i]] = [chapters[i], chapters[i-1]]; render(); scheduleAutosave(); } };
+        const down = el("button", "mini", "↓ Down"); down.type = "button";
+        down.onclick = () => { if (i < chapters.length-1) { [chapters[i+1], chapters[i]] = [chapters[i], chapters[i+1]]; render(); scheduleAutosave(); } };
+        const del = el("button", "mini danger", "✕ Delete section"); del.type = "button";
+        del.onclick = () => { if (confirm("Delete this whole section?")) { chapters.splice(i, 1); render(); scheduleAutosave(); } };
+        ctrls.append(up, down, del); body.appendChild(ctrls);
+
+        body.appendChild(textInput(ch, "title", "Section title"));
+        body.appendChild(textInput(ch, "intro", "Intro line (one warm sentence)", { area: true, rows: 2 }));
+        body.appendChild(stringList(ch.paragraphs, "Paragraphs (optional — for story/about sections)", "Write a paragraph…"));
+
+        const extra = el("details", "sub-details");
+        extra.appendChild(el("summary", null, "Facts & tags (optional)"));
+        const eb = el("div", "sec-body");
+        eb.appendChild(objectList(ch.facts, "Facts",
+          [{ key: "label", label: "Label", placeholder: "e.g. Born" }, { key: "value", label: "Value" }],
+          () => ({ label: "", value: "" })));
+        eb.appendChild(stringList(ch.interests, "Tags", "e.g. Travel"));
+        extra.appendChild(eb);
+        body.appendChild(extra);
+
+        body.appendChild(objectList(ch.photos, "Photos",
+          [{ key: "src", label: "Photo", type: "photo" },
+           { key: "caption", label: "Caption (short)" },
+           { key: "story", label: "Backstory / story", area: true, rows: 3 },
+           { key: "place", label: "Place", placeholder: "e.g. Goa" },
+           { key: "date", label: "Date", placeholder: "e.g. Dec 2024" }],
+          emptyPhoto,
+          "Add a photo for each memory — the backstory shows under the photo."));
+
+        d.appendChild(body);
+        list.appendChild(d);
+      });
+      const add = el("button", "btn primary add-chapter", "+ Add a new section"); add.type = "button";
+      add.onclick = () => { chapters.push(emptyChapter()); render(); scheduleAutosave(); };
+      list.appendChild(add);
+    }
+    render();
+    return list;
+  }
+
+  /* ---- build the form ---- */
+  function sec(parent, title, builder, open) {
+    const d = el("details", "sec");
+    d.open = !!open;
+    d.appendChild(el("summary", null, title));
+    const body = el("div", "sec-body");
+    builder(body);
+    d.appendChild(body);
+    parent.appendChild(d);
+  }
+
   function build() {
     const f = $("#form");
     f.innerHTML = "";
-
-    // helper to add a collapsible section
-    function sec(title, builder) {
-      const details = el("details", "sec");
-      details.open = true;
-      const sum = el("summary", null, title);
-      details.appendChild(sum);
-      const body = el("div", "sec-body");
-      builder(body);
-      details.appendChild(body);
-      f.appendChild(details);
-    }
-
-    sec("Cover", (b) => {
+    sec(f, "Cover", (b) => {
       b.append(
-        textField("meta.name", "Your name (big on cover)"),
-        textField("meta.tagline", "Tagline / one-line intro", { area: true, rows: 2 }),
-        photoField(data.meta, "coverPhoto", "Cover background photo (optional)")
+        textInput(data.meta, "name", "Your name (big on cover)"),
+        textInput(data.meta, "tagline", "Tagline / one-line intro", { area: true, rows: 2 }),
+        photoInput(data.meta, "coverPhoto", "Cover background photo (optional)")
       );
-    });
+    }, true);
 
-    sec("About Me", (b) => {
-      b.append(
-        textField("about.heading", "Section title"),
-        photoField(data.about, "photo", "Your photo")
-      );
-      b.appendChild(stringListEditor("about.bio", "Intro paragraphs", "Write a paragraph…"));
-      b.appendChild(objectListEditor("about.facts", "Quick facts",
-        [{ key: "label", label: "Label", placeholder: "e.g. Born" },
-         { key: "value", label: "Value", placeholder: "e.g. Indore, 1996" }],
-        () => ({ label: "", value: "" })));
-      b.appendChild(stringListEditor("about.interests", "Things I love", "e.g. Travel"));
-    });
+    sec(f, "Sections", (b) => { b.appendChild(chapterEditor(data.chapters)); }, true);
 
-    sec("My Family", (b) => {
-      b.append(
-        textField("family.heading", "Section title"),
-        textField("family.intro", "Intro", { area: true, rows: 3 }),
-        photoField(data.family, "photo", "Family photo")
-      );
-      b.appendChild(objectListEditor("family.members", "Family members",
-        [{ key: "relation", label: "Relation", placeholder: "Father / Mother / Brother" },
-         { key: "name", label: "Name" },
-         { key: "note", label: "A line about them", area: true }],
-        () => ({ relation: "", name: "", note: "" })));
-      b.appendChild(stringListEditor("family.values", "What we hold close", "A family value…"));
-    });
-
-    sec("Culture & Roots", (b) => {
-      b.append(
-        textField("culture.heading", "Section title"),
-        textField("culture.intro", "Intro", { area: true, rows: 3 })
-      );
-      b.appendChild(objectListEditor("culture.facts", "Facts (religion, community, etc.)",
-        [{ key: "label", label: "Label", placeholder: "e.g. Religion" },
-         { key: "value", label: "Value" }],
-        () => ({ label: "", value: "" })));
-      b.appendChild(stringListEditor("culture.traditions", "Traditions we cherish", "A tradition…"));
-      b.appendChild(stringListEditor("culture.festivals", "Festivals we celebrate", "e.g. Diwali"));
-      b.appendChild(textField("culture.note", "Closing note (optional)", { area: true, rows: 2 }));
-    });
-
-    sec("How We Met", (b) => {
-      b.append(
-        textField("story.heading", "Section title"),
-        textField("story.herName", "Her name"),
-        textField("story.intro", "Opening line", { area: true, rows: 3 })
-      );
-      b.appendChild(objectListEditor("story.timeline", "Moments (timeline)",
-        [{ key: "date", label: "When", placeholder: "e.g. March 2024" },
-         { key: "title", label: "Title", placeholder: "e.g. The day we met" },
-         { key: "text", label: "Story", area: true },
-         { key: "photo", label: "Photo", type: "photo" }],
-        () => ({ date: "", title: "", text: "", photo: "" })));
-    });
-
-    sec("Our Adventures (photo scrapbook)", (b) => {
-      b.append(
-        textField("gallery.heading", "Section title"),
-        textField("gallery.intro", "Intro", { area: true, rows: 2 })
-      );
-      b.appendChild(objectListEditor("gallery.photos", "Photos",
-        [{ key: "src", label: "Photo", type: "photo" },
-         { key: "caption", label: "Caption" },
-         { key: "place", label: "Place", placeholder: "e.g. Goa" },
-         { key: "date", label: "Date", placeholder: "e.g. Dec 2024" }],
-        () => ({ src: "", caption: "", place: "", date: "" }),
-        "Put the image files in the photos/ folder, then add an entry for each."));
-    });
-
-    sec("Places We Love (videos)", (b) => {
-      b.append(
-        textField("videos.heading", "Section title"),
-        textField("videos.intro", "Intro", { area: true, rows: 2 })
-      );
-      b.appendChild(objectListEditor("videos.items", "Videos",
-        [{ key: "url", label: "YouTube or Google Drive link", placeholder: "https://youtu.be/…" },
-         { key: "title", label: "Title" },
-         { key: "place", label: "Place" },
-         { key: "description", label: "Description", area: true }],
-        () => ({ url: "", title: "", place: "", description: "" }),
-        "Paste a YouTube or Google Drive share link. Make sure Drive links are set to 'Anyone with the link'."));
-    });
-
-    sec("Closing note", (b) => {
-      b.append(textField("closing.heading", "Heading"));
-      b.appendChild(stringListEditor("closing.text", "Closing paragraphs", "Write a paragraph…"));
-      b.append(textField("closing.signoff", "Sign-off (use Enter for new lines)", { area: true, rows: 2 }));
+    sec(f, "Closing note", (b) => {
+      b.append(textInput(data.closing, "heading", "Heading"));
+      b.appendChild(stringList(data.closing.text, "Closing paragraphs", "Write a paragraph…"));
+      b.append(textInput(data.closing, "signoff", "Sign-off (Enter for new lines)", { area: true, rows: 2 }));
     });
   }
 
@@ -302,75 +249,36 @@
     t.className = "toast show " + (ok ? "ok" : "err");
     setTimeout(() => { t.className = "toast"; }, 3200);
   }
-
-  function setStatus(text, cls) {
-    const s = $("#status");
-    if (!s) return;
-    s.textContent = text;
-    s.className = "status " + (cls || "");
-  }
-
-  function save() {
-    const ok = savePortfolioData(data);
-    toast(ok ? "Saved. Open the site to preview — then Download data.js to keep it."
-             : "Could not save (browser storage full). Use Download data.js instead.", ok);
-  }
-
-  /* Auto-save: write to the browser's local preview a moment after any change. */
-  let saveTimer = null;
-  function scheduleAutosave() {
-    setStatus("Saving…", "saving");
-    clearTimeout(saveTimer);
-    saveTimer = setTimeout(() => {
-      const ok = savePortfolioData(data);
-      setStatus(ok ? "✓ All changes saved" : "⚠ Storage full — use Download data.js",
-                ok ? "saved" : "err");
-    }, 500);
-  }
-
   function buildDataJsText() {
-    const json = JSON.stringify(data, null, 2);
     return "/* Portfolio content. Generated by admin.html. */\n" +
-           "window.PORTFOLIO_DATA = " + json + ";\n";
+           "window.PORTFOLIO_DATA = " + JSON.stringify(data, null, 2) + ";\n";
   }
-
   function download() {
-    save(); // keep preview in sync
+    savePortfolioData(data);
     const blob = new Blob([buildDataJsText()], { type: "text/javascript" });
     const url = URL.createObjectURL(blob);
-    const a = el("a");
-    a.href = url;
-    a.download = "data.js";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
+    const a = el("a"); a.href = url; a.download = "data.js";
+    document.body.appendChild(a); a.click(); a.remove();
     URL.revokeObjectURL(url);
-    toast("Downloaded data.js — replace the file in your js/ folder.");
+    toast("Downloaded data.js — replace the file in your js/ folder, then commit & push.");
   }
-
   function resetToFile() {
-    if (!confirm("Discard changes saved in this browser and reload the content from js/data.js?")) return;
+    if (!confirm("Discard changes saved in this browser and reload from js/data.js?")) return;
     try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
     data = JSON.parse(JSON.stringify(window.PORTFOLIO_DATA || {}));
+    ensureShape(data);
     build();
+    setStatus("✓ All changes saved", "saved");
     toast("Reloaded from js/data.js.");
   }
 
-  /* ---- wire up ---- */
   document.addEventListener("DOMContentLoaded", () => {
     build();
-
-    // Auto-save on every change: typing (input), file selection (change),
-    // and structural edits like add/remove/reorder (click).
     const form = $("#form");
     form.addEventListener("input", scheduleAutosave);
     form.addEventListener("change", scheduleAutosave);
-    form.addEventListener("click", (e) => {
-      if (e.target.closest("button")) scheduleAutosave();
-    });
-
-    if ($("#btn-save")) $("#btn-save").onclick = save;
+    form.addEventListener("click", (e) => { if (e.target.closest("button")) scheduleAutosave(); });
     $("#btn-download").onclick = download;
-    $("#btn-reset").onclick = () => { resetToFile(); setStatus("✓ All changes saved", "saved"); };
+    $("#btn-reset").onclick = resetToFile;
   });
 })();

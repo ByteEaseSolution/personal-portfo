@@ -1,6 +1,6 @@
 /* Shared helpers used by both the site and the admin editor. */
 
-const STORAGE_KEY = "samir_portfolio_data_v1";
+const STORAGE_KEY = "samir_portfolio_data_v2";
 
 /* Load data: prefer anything saved in this browser (from the admin editor),
    otherwise fall back to the shipped js/data.js content. */

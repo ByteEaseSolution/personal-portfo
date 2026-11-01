@@ -52,6 +52,15 @@
     .status.saving { color:#8a6a2e; background:#f6edd8; }
     .status.err    { color:#8a3324; background:#f3ddd6; }
     @media (max-width:560px){ .status{ display:none; } }
+    .sec--chapter { margin:0 0 .8rem; }
+    .sec--chapter > summary { background:#fbe6ee; }
+    .chapter-ctrls { display:flex; gap:.4rem; flex-wrap:wrap; margin-bottom:.8rem; }
+    .sub-details { border:1px dashed var(--line); border-radius:8px; margin:.5rem 0 1rem; background:#fdf5f8; }
+    .sub-details > summary { cursor:pointer; padding:.5rem .8rem; font-size:.85rem; font-weight:600; color:var(--soft); list-style:none; }
+    .sub-details > summary::-webkit-details-marker { display:none; }
+    .sub-details > summary::before { content:"▸ "; color:var(--accent); }
+    .sub-details[open] > summary::before { content:"▾ "; }
+    .add-chapter { margin-top:.5rem; width:100%; }
   </style>
 </head>
 <body>

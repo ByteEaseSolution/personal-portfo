@@ -19,10 +19,19 @@
   <nav class="topbar">
     <span class="brand">Samir</span>
     <div id="nav-links"></div>
-    <button class="btn-pdf" onclick="window.print()">⬇ Download as PDF</button>
+    <button class="btn-pdf" onclick="downloadPDF()">⬇ Download as PDF</button>
   </nav>
 
   <div id="app"><!-- rendered by js/render.js --></div>
+
+  <!-- Loading overlay shown while the server builds the PDF -->
+  <div id="pdf-overlay" aria-hidden="true">
+    <div class="pdf-overlay-card">
+      <div class="pdf-spinner"></div>
+      <p>Preparing your PDF…</p>
+      <span>Rendering the decorated keepsake — just a moment.</span>
+    </div>
+  </div>
 
   <!-- Decorative border shown only when printing / saving as PDF.
        A fixed element repeats on every printed page. -->
@@ -39,5 +48,6 @@
   <script src="js/data.js"></script>
   <script src="js/util.js"></script>
   <script src="js/render.js"></script>
+  <script src="js/pdf.js"></script>
 </body>
 </html>
