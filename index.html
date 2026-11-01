@@ -24,6 +24,14 @@
 
   <div id="app"><!-- rendered by js/render.js --></div>
 
+  <!-- Decorative border shown only when printing / saving as PDF.
+       A fixed element repeats on every printed page. -->
+  <div class="print-frame" aria-hidden="true">
+    <span class="corner tl"></span><span class="corner tr"></span>
+    <span class="corner bl"></span><span class="corner br"></span>
+    <span class="mid top"></span><span class="mid bot"></span>
+  </div>
+
   <footer>
     Made with care. · <a href="admin.html" style="color:inherit;">Edit this page</a>
   </footer>

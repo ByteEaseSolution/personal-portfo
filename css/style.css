@@ -23,6 +23,9 @@
 
 * { box-sizing: border-box; }
 
+/* Decorative print frame is invisible on screen; print.css turns it on. */
+.print-frame { display: none; }
+
 html { scroll-behavior: smooth; font-size: 18px; }
 
 body {

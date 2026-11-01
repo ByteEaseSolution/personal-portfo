@@ -1,76 +1,149 @@
 /* ===========================================================================
-   Print / "Save as PDF" styles.
-   Goal: a clean, readable keepsake. Each section starts on a fresh page,
-   nothing is cut awkwardly, and videos become link cards (since a PDF
-   can't play them).
+   Print / "Save as PDF" — a decorated keepsake.
+   Designed and verified against Chromium's print engine (A4).
    =========================================================================== */
 
 @page {
   size: A4;
-  margin: 16mm 14mm;
+  margin: 13mm;
 }
 
 @media print {
 
-  /* Hide interactive chrome */
-  .topbar, .cover-scroll, .btn-pdf, #nav-links { display: none !important; }
-
+  /* ---- base ---- */
+  html { font-size: 11pt; }
   html, body {
     background: #fff !important;
-    color: #2a211b !important;
+    color: #42283a !important;
   }
+  body { font-size: 1.1rem; line-height: 1.5; }
 
-  /* Remove animations / transforms that confuse the print engine */
   * { animation: none !important; transition: none !important; }
   .tilt { transform: none !important; }
 
-  .pages { max-width: 100%; margin: 0; padding: 0; }
+  /* Hide screen-only chrome */
+  .topbar, .cover-scroll, .btn-pdf, #nav-links, footer, #videos { display: none !important; }
 
-  /* Cover gets its own page */
-  .cover {
-    min-height: auto; height: 95vh;
-    page-break-after: always; break-after: page;
-    border: none;
+  /* Make colours & backgrounds actually print */
+  .polaroid, .tl-card, .member, .closing-card, .facts--card, .chip,
+  .tl-dot, .print-frame, .print-frame *, .member, .cover-inner::after {
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
   }
-  .cover--photo { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .cover-name { color: #2a211b !important; text-shadow: none !important; }
-  .cover-eyebrow, .cover-tagline { color: #5a4a3d !important; }
 
-  /* Each section on its own page */
+  /* No horizontal overflow anywhere. The left/right padding keeps content
+     clear of the decorative frame (which sits just inside the page margin). */
+  .pages { max-width: 100%; margin: 0; padding: 0 8mm; }
+  .section, .about-grid, .split, .culture-grid, .scrapbook, .timeline,
+  .about-text, .members, .facts { max-width: 100%; }
+  img { max-width: 100%; }
+
+  /* ---- COVER (light, elegant title page) ---- */
+  .cover,
+  .cover.cover--photo {
+    background: #fff !important;
+    min-height: 0 !important;
+    height: 247mm;
+    display: flex; align-items: center; justify-content: center;
+    border: none !important;
+    page-break-after: always; break-after: page;
+    color: #42283a !important;
+  }
+  .cover-name { color: #c24d7a !important; text-shadow: none !important; font-size: 3.6rem !important; }
+  .cover-eyebrow { color: #cf8f74 !important; }
+  .cover-tagline { color: #8a5d70 !important; }
+  .cover-inner::after {   /* small flourish under the tagline */
+    content: ""; display: block; width: 46mm; height: 6mm; margin: 9mm auto 0;
+    background: center/contain no-repeat
+      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 16' fill='none' stroke='%23cf7596'><path d='M4 8 H62' stroke-width='1.2'/><path d='M98 8 H156' stroke-width='1.2'/><path d='M80 2 l6 6 -6 6 -6 -6 z' fill='%23cf7596' stroke='none'/><circle cx='68' cy='8' r='1.7' fill='%23cf7596' stroke='none'/><circle cx='92' cy='8' r='1.7' fill='%23cf7596' stroke='none'/></svg>");
+  }
+
+  /* ---- each section = its own page ---- */
   .section {
     page-break-before: always; break-before: page;
-    page-break-inside: auto;
     border: none !important;
-    padding: 0 0 1rem;
+    padding: 10mm 0 2mm;   /* top pad keeps the heading below the frame's top edge */
   }
   #about { page-break-before: avoid; break-before: avoid; }
+  .section-head { margin-bottom: 6mm; }
+  .section-title { font-size: 2.1rem !important; }
+  .lead { font-size: 1.2rem; }
+  .lead.center { margin-bottom: 6mm; }
 
-  .section-head { margin-bottom: 1.2rem; }
-
-  /* Keep these blocks from splitting across pages */
-  .polaroid, .member, .tl-item, .video-card, .closing-card, .fact {
+  /* keep blocks whole */
+  .polaroid, .member, .tl-item, .closing-card, .facts--card, .fact, .video-card {
     page-break-inside: avoid; break-inside: avoid;
   }
+  h1, h2, h3 { page-break-after: avoid; break-after: avoid; }
 
-  /* Make sure colours/shadows print */
-  .polaroid, .tl-card, .member, .video-card, .closing-card, .facts--card {
+  /* cards: flat, soft outline so they read on white */
+  .polaroid, .tl-card, .member, .closing-card, .facts--card {
     box-shadow: none !important;
-    border: 1px solid #ddd2c0 !important;
-    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    border: 1px solid #ecc6d6 !important;
   }
   .tape { display: none !important; }
 
-  /* Grids: tighten for paper */
-  .scrapbook { grid-template-columns: 1fr 1fr !important; gap: 1.2rem !important; }
-  .videos { grid-template-columns: 1fr !important; }
-  .about-grid { grid-template-columns: 240px 1fr !important; }
-  .split, .culture-grid { grid-template-columns: 1fr !important; }
+  /* ---- single-column, centred media for text sections ---- */
+  .about-grid, .split, .culture-grid { grid-template-columns: 1fr !important; gap: 4mm !important; }
+  .about-photo, .split-media { max-width: 62mm; margin: 0 auto 5mm; }
+  .polaroid .photo img { max-height: 70mm; object-fit: cover; }
+  .facts { grid-template-columns: minmax(0,1fr) minmax(0,1fr) !important; gap: .2rem 8mm !important; }
+  .facts--card { padding: 4mm 6mm; }
 
-  /* Videos are online-only — leave them out of the printed PDF entirely. */
-  #videos { display: none !important; }
+  /* ---- family ---- */
+  .members { gap: 3mm; margin: 4mm 0; }
+  .member { padding: 3mm 4mm; }
+  .values { margin-top: 2mm; }
+  .mini-head { margin: 5mm 0 2mm; }
 
-  a { color: #2a211b !important; text-decoration: none; }
+  /* ---- timeline ---- */
+  .timeline { padding-left: 5mm; }
+  .tl-item { padding: 0 0 5mm 5mm; }
+  .tl-card { padding: 4mm 5mm; }
+  .tl-card h3 { font-size: 1.6rem !important; }
+  .tl-photo { max-width: 55mm; margin-top: 4mm; }
 
-  /* Avoid a lonely heading at the bottom of a page */
-  h1, h2, h3 { page-break-after: avoid; break-after: avoid; }
+  /* ---- gallery: one photo per row, album-style, centred in a definite-width
+     container (avoids any grid-track vs. image intrinsic-size conflict) ---- */
+  .scrapbook { grid-template-columns: 1fr !important; gap: 9mm !important; max-width: 118mm; margin: 0 auto; }
+  .scrapbook .polaroid { width: 100%; }
+  .scrapbook .polaroid .photo { height: 72mm; overflow: hidden; }
+  .scrapbook .polaroid .photo img { width: 100%; height: 100%; object-fit: cover; }
+  .polaroid figcaption { font-size: 1.35rem; padding: .3rem .2rem .5rem; }
+
+  /* ---- closing ---- */
+  .closing-card { box-shadow: none !important; border: 1px solid #ecc6d6 !important; padding: 10mm; }
+  .closing-card h2 { font-size: 2.3rem !important; }
+
+  a { color: #42283a !important; text-decoration: none; }
+
+  /* ===== decorative border, repeated on every printed page =====
+     NOTE: in print, position:fixed is relative to the page's content box
+     (inside @page margins). A NEGATIVE inset pushes the frame outward into
+     the margin so it surrounds the content with clearance. */
+  .print-frame {
+    display: block !important;
+    position: fixed; inset: 0; z-index: 9999; pointer-events: none;
+    border: 0.5mm solid #d98fad; border-radius: 2.5mm;
+  }
+  .print-frame::after {   /* thin inner double-rule */
+    content: ""; position: absolute; inset: 1.8mm;
+    border: 0.3mm solid #eec0d2; border-radius: 1.6mm;
+  }
+  .print-frame .corner {
+    position: absolute; width: 15mm; height: 15mm;
+    background: center/contain no-repeat
+      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 110' fill='none' stroke='%23cf7596'><path d='M8 74 C8 36 36 8 74 8' stroke-width='2.4'/><path d='M8 56 C8 30 30 8 56 8' stroke-width='1.1'/><circle cx='74' cy='8' r='2.3' fill='%23cf7596' stroke='none'/><circle cx='8' cy='74' r='2.3' fill='%23cf7596' stroke='none'/><path d='M24 24 q9 -5 16 2 q-7 -1 -10 6 q-2 -6 -6 -8' fill='%23cf7596' stroke='none'/></svg>");
+  }
+  .print-frame .corner.tl { top: 0.8mm; left: 0.8mm; }
+  .print-frame .corner.tr { top: 0.8mm; right: 0.8mm; transform: rotate(90deg); }
+  .print-frame .corner.br { bottom: 0.8mm; right: 0.8mm; transform: rotate(180deg); }
+  .print-frame .corner.bl { bottom: 0.8mm; left: 0.8mm; transform: rotate(270deg); }
+  .print-frame .mid {
+    position: absolute; left: 50%; transform: translateX(-50%);
+    width: 44mm; height: 5mm;
+    background: center/contain no-repeat
+      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 16' fill='none' stroke='%23cf7596'><path d='M4 8 H62' stroke-width='1.2'/><path d='M98 8 H156' stroke-width='1.2'/><path d='M80 2 l6 6 -6 6 -6 -6 z' fill='%23cf7596' stroke='none'/><circle cx='68' cy='8' r='1.7' fill='%23cf7596' stroke='none'/><circle cx='92' cy='8' r='1.7' fill='%23cf7596' stroke='none'/></svg>");
+  }
+  .print-frame .mid.top { top: 1.2mm; }
+  .print-frame .mid.bot { bottom: 1.2mm; }
 }
