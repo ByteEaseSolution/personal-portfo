@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edit — Samir's Portfolio</title>
   <style>
-    :root { --accent:#b5553d; --ink:#3a2e26; --soft:#6b5a4c; --bg:#f6efe3; --card:#fffdf8; --line:#e2d7c4; }
+    :root { --accent:#d25b86; --ink:#46283a; --soft:#8a5d70; --bg:#fdf1f4; --card:#fffafc; --line:#f0d9e1; }
     * { box-sizing: border-box; }
     body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--ink); background:var(--bg); line-height:1.5; }
     header.bar { position:sticky; top:0; z-index:10; display:flex; align-items:center; gap:.6rem; flex-wrap:wrap;
@@ -20,7 +20,7 @@
     .intro { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:1rem 1.2rem; margin-bottom:1.2rem; font-size:.92rem; color:var(--soft); }
     .intro b { color:var(--ink); }
     details.sec { background:var(--card); border:1px solid var(--line); border-radius:10px; margin-bottom:1rem; overflow:hidden; }
-    details.sec > summary { cursor:pointer; padding:.9rem 1.1rem; font-weight:700; font-size:1rem; list-style:none; background:#fbf6ec; }
+    details.sec > summary { cursor:pointer; padding:.9rem 1.1rem; font-weight:700; font-size:1rem; list-style:none; background:#fdeef3; }
     details.sec > summary::-webkit-details-marker { display:none; }
     details.sec > summary::before { content:"▸ "; color:var(--accent); }
     details.sec[open] > summary::before { content:"▾ "; }
@@ -29,7 +29,7 @@
     .fld-label { display:block; font-size:.78rem; font-weight:600; color:var(--soft); margin-bottom:.25rem; }
     .fld input[type=text], .fld textarea, .row input { width:100%; padding:.55rem .65rem; border:1px solid var(--line); border-radius:7px; font:inherit; background:#fff; }
     .fld textarea { resize:vertical; }
-    .sublist { margin:.3rem 0 1rem; padding:.7rem .8rem; border:1px dashed var(--line); border-radius:9px; background:#fbf7ef; }
+    .sublist { margin:.3rem 0 1rem; padding:.7rem .8rem; border:1px dashed var(--line); border-radius:9px; background:#fdeef3; }
     .sublist-head, h4.sublist-head { margin:0 0 .5rem; font-size:.9rem; }
     .row { display:flex; gap:.4rem; margin-bottom:.4rem; }
     .item-card { border:1px solid var(--line); border-radius:9px; padding:.7rem .8rem; margin-bottom:.7rem; background:#fff; }
@@ -37,9 +37,9 @@
     .item-num { font-weight:700; color:var(--accent); font-size:.85rem; }
     .item-ctrls { display:flex; gap:.3rem; }
     .mini { border:1px solid var(--line); background:#fff; cursor:pointer; border-radius:6px; padding:.3rem .5rem; font-size:.78rem; }
-    .mini.add { background:#eef1e4; border-color:#cdd3b4; color:#4d5a2e; font-weight:600; margin-top:.3rem; }
+    .mini.add { background:#fbe3ec; border-color:#eab8cc; color:#9c3d63; font-weight:600; margin-top:.3rem; }
     .mini.danger { color:#a33; }
-    .mini.pick { background:#f0e7da; white-space:nowrap; }
+    .mini.pick { background:#f6dde7; white-space:nowrap; }
     .photo-row { display:flex; gap:.4rem; }
     .photo-preview { margin-top:.5rem; max-width:200px; border-radius:6px; border:1px solid var(--line); }
     .hint { font-size:.76rem; color:var(--soft); margin:.3rem 0 0; }

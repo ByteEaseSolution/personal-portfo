@@ -66,18 +66,8 @@
   .about-grid { grid-template-columns: 240px 1fr !important; }
   .split, .culture-grid { grid-template-columns: 1fr !important; }
 
-  /* Videos: hide the live player, show the printable card instead */
-  .video-embed { display: none !important; }
-  .video-print {
-    display: flex !important; gap: 1rem; align-items: center;
-    padding: .9rem; background: #faf6ee !important;
-    -webkit-print-color-adjust: exact; print-color-adjust: exact;
-  }
-  .video-print img { width: 140px; height: 80px; object-fit: cover; border-radius: 4px; }
-  .video-print__ph { width: 140px; height: 80px; display: flex; align-items: center; justify-content: center; background: #eadfce; border-radius: 4px; font-size: 1.4rem; }
-  .video-print__body { display: flex; flex-direction: column; }
-  .video-print__body strong { font-size: 1rem; }
-  .video-print__url { font-family: monospace; font-size: .72rem; color: #8a5a3d; word-break: break-all; margin-top: .25rem; }
+  /* Videos are online-only — leave them out of the printed PDF entirely. */
+  #videos { display: none !important; }
 
   a { color: #2a211b !important; text-decoration: none; }
 
