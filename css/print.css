@@ -22,7 +22,7 @@
   .tilt { transform: none !important; }
 
   /* Hide screen-only chrome */
-  .topbar, .cover-scroll, .btn-pdf, #nav-links, footer, #videos, #pdf-overlay { display: none !important; }
+  .topbar, .cover-scroll, .btn-pdf, #nav-links, footer, #videos, #pdf-overlay, #lightbox { display: none !important; }
 
   /* Make colours & backgrounds actually print */
   .polaroid, .tl-card, .member, .closing-card, .facts--card, .chip,

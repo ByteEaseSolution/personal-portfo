@@ -35,6 +35,17 @@
     </div>
   </div>
 
+  <!-- Image lightbox (tap any photo to enlarge) -->
+  <div id="lightbox" aria-hidden="true">
+    <button class="lb-close" aria-label="Close">✕</button>
+    <button class="lb-prev" aria-label="Previous photo">‹</button>
+    <button class="lb-next" aria-label="Next photo">›</button>
+    <figure class="lb-figure">
+      <img class="lb-img" src="" alt="">
+      <figcaption class="lb-cap"></figcaption>
+    </figure>
+  </div>
+
   <!-- Decorative border shown only when printing / saving as PDF.
        A fixed element repeats on every printed page. -->
   <div class="print-frame" aria-hidden="true">
@@ -51,5 +62,6 @@
   <script src="js/util.js"></script>
   <script src="js/render.js"></script>
   <script src="js/pdf.js"></script>
+  <script src="js/lightbox.js"></script>
 </body>
 </html>
