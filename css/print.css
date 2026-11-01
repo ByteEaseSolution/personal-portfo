@@ -1,0 +1,86 @@
+/* ===========================================================================
+   Print / "Save as PDF" styles.
+   Goal: a clean, readable keepsake. Each section starts on a fresh page,
+   nothing is cut awkwardly, and videos become link cards (since a PDF
+   can't play them).
+   =========================================================================== */
+
+@page {
+  size: A4;
+  margin: 16mm 14mm;
+}
+
+@media print {
+
+  /* Hide interactive chrome */
+  .topbar, .cover-scroll, .btn-pdf, #nav-links { display: none !important; }
+
+  html, body {
+    background: #fff !important;
+    color: #2a211b !important;
+  }
+
+  /* Remove animations / transforms that confuse the print engine */
+  * { animation: none !important; transition: none !important; }
+  .tilt { transform: none !important; }
+
+  .pages { max-width: 100%; margin: 0; padding: 0; }
+
+  /* Cover gets its own page */
+  .cover {
+    min-height: auto; height: 95vh;
+    page-break-after: always; break-after: page;
+    border: none;
+  }
+  .cover--photo { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .cover-name { color: #2a211b !important; text-shadow: none !important; }
+  .cover-eyebrow, .cover-tagline { color: #5a4a3d !important; }
+
+  /* Each section on its own page */
+  .section {
+    page-break-before: always; break-before: page;
+    page-break-inside: auto;
+    border: none !important;
+    padding: 0 0 1rem;
+  }
+  #about { page-break-before: avoid; break-before: avoid; }
+
+  .section-head { margin-bottom: 1.2rem; }
+
+  /* Keep these blocks from splitting across pages */
+  .polaroid, .member, .tl-item, .video-card, .closing-card, .fact {
+    page-break-inside: avoid; break-inside: avoid;
+  }
+
+  /* Make sure colours/shadows print */
+  .polaroid, .tl-card, .member, .video-card, .closing-card, .facts--card {
+    box-shadow: none !important;
+    border: 1px solid #ddd2c0 !important;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .tape { display: none !important; }
+
+  /* Grids: tighten for paper */
+  .scrapbook { grid-template-columns: 1fr 1fr !important; gap: 1.2rem !important; }
+  .videos { grid-template-columns: 1fr !important; }
+  .about-grid { grid-template-columns: 240px 1fr !important; }
+  .split, .culture-grid { grid-template-columns: 1fr !important; }
+
+  /* Videos: hide the live player, show the printable card instead */
+  .video-embed { display: none !important; }
+  .video-print {
+    display: flex !important; gap: 1rem; align-items: center;
+    padding: .9rem; background: #faf6ee !important;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .video-print img { width: 140px; height: 80px; object-fit: cover; border-radius: 4px; }
+  .video-print__ph { width: 140px; height: 80px; display: flex; align-items: center; justify-content: center; background: #eadfce; border-radius: 4px; font-size: 1.4rem; }
+  .video-print__body { display: flex; flex-direction: column; }
+  .video-print__body strong { font-size: 1rem; }
+  .video-print__url { font-family: monospace; font-size: .72rem; color: #8a5a3d; word-break: break-all; margin-top: .25rem; }
+
+  a { color: #2a211b !important; text-decoration: none; }
+
+  /* Avoid a lonely heading at the bottom of a page */
+  h1, h2, h3 { page-break-after: avoid; break-after: avoid; }
+}

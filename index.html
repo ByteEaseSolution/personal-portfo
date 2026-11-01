@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samir — Personal Portfolio</title>
+  <meta name="description" content="A personal portfolio — about me, my family, my roots, and our story.">
+
+  <!-- Fonts (load when online; graceful fallback when offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+
+  <nav class="topbar">
+    <span class="brand">Samir</span>
+    <div id="nav-links"></div>
+    <button class="btn-pdf" onclick="window.print()">⬇ Download as PDF</button>
+  </nav>
+
+  <div id="app"><!-- rendered by js/render.js --></div>
+
+  <footer>
+    Made with care. · <a href="admin.html" style="color:inherit;">Edit this page</a>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/render.js"></script>
+</body>
+</html>
