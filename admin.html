@@ -61,6 +61,11 @@
     .sub-details > summary::before { content:"▸ "; color:var(--accent); }
     .sub-details[open] > summary::before { content:"▾ "; }
     .add-chapter { margin-top:.5rem; width:100%; }
+    .drag-handle { display:inline-block; cursor:grab; color:#c98aa6; margin-right:.5rem; font-size:1.05rem; user-select:none; }
+    .drag-handle:active { cursor:grabbing; }
+    .sec--chapter.dragging { opacity:.45; }
+    .sec--chapter.drag-over { outline:2px dashed var(--accent); outline-offset:2px; border-radius:10px; }
+    #btn-upload { cursor:pointer; }
   </style>
 </head>
 <body>
@@ -69,6 +74,9 @@
     <span class="status saved" id="status">✓ All changes saved</span>
     <a class="linkbtn" href="index.html" target="_blank"><button class="btn ghost">👁 View site</button></a>
     <button class="btn subtle" id="btn-reset">Reset to file</button>
+    <label class="btn ghost" id="btn-upload" title="Load content from a data.js file">⬆ Upload data.js
+      <input type="file" id="file-upload" accept=".js,text/javascript,application/javascript" style="display:none">
+    </label>
     <button class="btn primary" id="btn-download">⬇ Download data.js</button>
   </header>
 

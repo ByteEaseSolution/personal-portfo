@@ -160,12 +160,49 @@
   /* ---- chapter editor ---- */
   function chapterEditor(chapters) {
     const list = el("div");
+    let dragFrom = null;
     function render() {
       list.innerHTML = "";
       chapters.forEach((ch, i) => {
         ensureArrays(ch);
         const d = el("details", "sec sec--chapter");
-        d.appendChild(el("summary", null, (i + 1) + ". " + (ch.title || "Untitled section")));
+
+        // summary with a drag handle
+        const summary = el("summary");
+        const handle = el("span", "drag-handle", "⠿");
+        handle.draggable = true;
+        handle.title = "Drag to reorder";
+        handle.addEventListener("click", (e) => { e.preventDefault(); e.stopPropagation(); });
+        handle.addEventListener("dragstart", (e) => {
+          dragFrom = i; e.dataTransfer.effectAllowed = "move";
+          try { e.dataTransfer.setData("text/plain", String(i)); } catch (_) {}
+          d.classList.add("dragging");
+        });
+        handle.addEventListener("dragend", () => {
+          d.classList.remove("dragging");
+          list.querySelectorAll(".drag-over").forEach((n) => n.classList.remove("drag-over"));
+        });
+        summary.append(handle, document.createTextNode((i + 1) + ". " + (ch.title || "Untitled section")));
+        d.appendChild(summary);
+
+        // drop target
+        d.addEventListener("dragover", (e) => {
+          if (dragFrom === null) return;
+          e.preventDefault(); e.dataTransfer.dropEffect = "move";
+          d.classList.add("drag-over");
+        });
+        d.addEventListener("dragleave", () => { d.classList.remove("drag-over"); });
+        d.addEventListener("drop", (e) => {
+          if (dragFrom === null) return;
+          e.preventDefault(); d.classList.remove("drag-over");
+          const from = dragFrom, to = i; dragFrom = null;
+          if (from !== to) {
+            const [moved] = chapters.splice(from, 1);
+            chapters.splice(to, 0, moved);
+            render(); scheduleAutosave();
+          }
+        });
+
         const body = el("div", "sec-body");
 
         const ctrls = el("div", "chapter-ctrls");
@@ -203,7 +240,7 @@
         d.appendChild(body);
         list.appendChild(d);
       });
-      const add = el("button", "btn primary add-chapter", "+ Add a new section"); add.type = "button";
+      const add = el("button", "btn primary add-chapter", "+ Add a custom section"); add.type = "button";
       add.onclick = () => { chapters.push(emptyChapter()); render(); scheduleAutosave(); };
       list.appendChild(add);
     }
@@ -262,6 +299,41 @@
     URL.revokeObjectURL(url);
     toast("Downloaded data.js — replace the file in your js/ folder, then commit & push.");
   }
+  /* Parse an uploaded data.js and pull out the PORTFOLIO_DATA object.
+     Runs the file in a contained function scope with a fake `window`. */
+  function parseDataJs(text) {
+    const win = {};
+    // eslint-disable-next-line no-new-func
+    const fn = new Function(
+      "window",
+      text + "\n; return (window && window.PORTFOLIO_DATA) ? window.PORTFOLIO_DATA : (typeof PORTFOLIO_DATA !== 'undefined' ? PORTFOLIO_DATA : null);"
+    );
+    return fn(win);
+  }
+
+  function handleUpload(e) {
+    const f = e.target.files && e.target.files[0];
+    if (!f) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const obj = parseDataJs(String(reader.result));
+        if (!obj || typeof obj !== "object") throw new Error("no PORTFOLIO_DATA found");
+        data = obj;
+        ensureShape(data);
+        savePortfolioData(data);
+        build();
+        setStatus("✓ All changes saved", "saved");
+        toast("Loaded — content imported from your data.js file.");
+      } catch (err) {
+        toast("Couldn't read that file: " + ((err && err.message) || err), false);
+      }
+      e.target.value = "";   // allow re-picking the same file
+    };
+    reader.onerror = () => { toast("Couldn't read that file.", false); e.target.value = ""; };
+    reader.readAsText(f);
+  }
+
   function resetToFile() {
     if (!confirm("Discard changes saved in this browser and reload from js/data.js?")) return;
     try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
@@ -280,5 +352,7 @@
     form.addEventListener("click", (e) => { if (e.target.closest("button")) scheduleAutosave(); });
     $("#btn-download").onclick = download;
     $("#btn-reset").onclick = resetToFile;
+    const fileUpload = $("#file-upload");
+    if (fileUpload) fileUpload.addEventListener("change", handleUpload);
   });
 })();
