@@ -139,6 +139,7 @@ img { max-width: 100%; display: block; }
 .polaroid {
   background: var(--card); padding: .7rem .7rem 0; border-radius: 3px;
   box-shadow: var(--shadow); position: relative; width: 100%;
+  margin: 0;   /* reset the browser's default <figure> margin (0 40px) */
 }
 .tilt { transform: rotate(var(--rot, -2deg)); transition: transform .25s; }
 .tilt:hover { transform: rotate(0deg) scale(1.02); z-index: 5; }
