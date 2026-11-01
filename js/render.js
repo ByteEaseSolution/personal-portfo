@@ -30,7 +30,8 @@
     const paras = (ch.paragraphs || []).filter(has);
     const facts = (ch.facts || []).filter((f) => has(f.value));
     const tags = (ch.interests || []).filter(has);
-    const photos = (ch.photos || []);
+    // Skip completely-empty photo slots so they don't show an "add a photo" box.
+    const photos = (ch.photos || []).filter((p) => has(p.src) || has(p.caption) || has(p.story));
 
     let body = "";
     if (has(ch.intro)) body += `<p class="lead center">${esc(ch.intro)}</p>`;
