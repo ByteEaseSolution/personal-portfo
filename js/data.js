@@ -404,16 +404,67 @@ window.PORTFOLIO_DATA = {
     {
       "title": "Our First Dates",
       "intro": "The early days — all kinds of firsts.",
-      "paragraphs": [],
+      "paragraphs": [
+        ""
+      ],
       "facts": [],
       "interests": [],
       "photos": [
         {
-          "src": "",
+          "src": "https://drive.google.com/file/d/1hNelc583ZR7FzBtIXvTrh_xzAlziXF-1/view?usp=sharing",
+          "caption": "First time at Kankaria",
+          "story": "",
+          "place": "",
+          "date": "Oct 2025"
+        },
+        {
+          "src": "https://drive.google.com/file/d/11c2D1l6s5hfL_j12mmilGQO6590lHz57/view?usp=sharing",
           "caption": "",
           "story": "",
           "place": "",
           "date": ""
+        },
+        {
+          "src": "https://drive.google.com/file/d/1cLOd5zwAjYnwazRVQLw1RflijCYBXaUi/view?usp=sharing",
+          "caption": "First Prank",
+          "story": "",
+          "place": "",
+          "date": ""
+        },
+        {
+          "src": "https://drive.google.com/file/d/12s0qATyX7DwOncgzUrf7vlBeiW_j9e2J/view?usp=sharing",
+          "caption": "My Birthday",
+          "story": "",
+          "place": "",
+          "date": ""
+        },
+        {
+          "src": "https://drive.google.com/file/d/1Hkin5cBVYQcYAjXMKtKkgNX95IgsGsOr/view?usp=sharing",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": ""
+        },
+        {
+          "src": "https://drive.google.com/file/d/13rGUlUlA8gOWPYMBd70XSaJtCXg1E-Zr/view?usp=sharing",
+          "caption": "First Selfie Together",
+          "story": "",
+          "place": "",
+          "date": ""
+        },
+        {
+          "src": "https://drive.google.com/file/d/1iJ8vUGBTvBkkRFkKr0SC8DAVRtMDijNx/view?usp=sharing",
+          "caption": "Balloon Shooting",
+          "story": "",
+          "place": "",
+          "date": ""
+        },
+        {
+          "src": "https://drive.google.com/file/d/1NEZkmDVqpbYaV5S3EyXT7VHCwlVXcMN4/view?usp=sharing",
+          "caption": "First morning walk",
+          "story": "",
+          "place": "Ahmedabad",
+          "date": "Nov 2025"
         }
       ]
     },
@@ -423,7 +474,15 @@ window.PORTFOLIO_DATA = {
       "paragraphs": [],
       "facts": [],
       "interests": [],
-      "photos": []
+      "photos": [
+        {
+          "src": "https://drive.google.com/file/d/1YysXkDpuevlomVSunbW_WW9lqFAuT8-q/view?usp=sharing",
+          "caption": "Abhivyakti",
+          "story": "",
+          "place": "",
+          "date": ""
+        }
+      ]
     },
     {
       "title": "From My Kitchen",

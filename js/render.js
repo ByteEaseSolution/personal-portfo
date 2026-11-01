@@ -25,6 +25,42 @@
       </figure>`;
   }
 
+  /* image-only polaroid, used inside a shared-caption group */
+  function photoImgOnly(p, i, label) {
+    if (!has(p.src)) return "";
+    return `
+      <figure class="polaroid tilt" style="--rot:${rot(i)}deg">
+        <span class="tape"></span>
+        <div class="photo"><img loading="lazy" referrerpolicy="no-referrer" data-caption="${esc(label || "")}" src="${esc(resolvePhotoSrc(p.src))}" alt="${esc(label || "")}"></div>
+      </figure>`;
+  }
+
+  /* Build the gallery. Consecutive photos that share the same "group" label are
+     clustered together under one shared caption; others render individually. */
+  function buildScrapbook(photos) {
+    const items = [];
+    let i = 0;
+    while (i < photos.length) {
+      const g = (photos[i].group || "").trim();
+      if (g) {
+        const grp = [photos[i]]; let j = i + 1;
+        while (j < photos.length && (photos[j].group || "").trim() === g) { grp.push(photos[j]); j++; }
+        items.push({ type: "group", label: g, photos: grp });
+        i = j;
+      } else {
+        items.push({ type: "single", photo: photos[i] });
+        i++;
+      }
+    }
+    let n = 0;
+    const html = items.map((it) => {
+      if (it.type === "single") return photoCard(it.photo, n++);
+      const imgs = it.photos.map((p) => photoImgOnly(p, n++, it.label)).join("");
+      return `<div class="photo-group"><div class="group-photos">${imgs}</div><div class="group-label">${esc(it.label)}</div></div>`;
+    }).join("");
+    return `<div class="scrapbook">${html}</div>`;
+  }
+
   /* ---------- one chapter = one section ---------- */
   function renderChapter(ch, n) {
     const paras = (ch.paragraphs || []).filter(has);
@@ -45,7 +81,7 @@
       body += `<div class="chips center">${tags.map((t) => `<span class="chip">${esc(t)}</span>`).join("")}</div>`;
     }
     if (photos.length) {
-      body += `<div class="scrapbook">${photos.map((p, i) => photoCard(p, i)).join("")}</div>`;
+      body += buildScrapbook(photos);
     } else if (!paras.length && !facts.length && !tags.length) {
       body += `<p class="empty-hint">Add photos or text for this section in the editor (admin.html).</p>`;
     }

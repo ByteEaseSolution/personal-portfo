@@ -32,7 +32,7 @@
   function emptyChapter() {
     return { title: "New section", intro: "", paragraphs: [], facts: [], interests: [], photos: [] };
   }
-  function emptyPhoto() { return { src: "", caption: "", story: "", place: "", date: "" }; }
+  function emptyPhoto() { return { src: "", caption: "", story: "", place: "", date: "", group: "" }; }
 
   /* ---- autosave ---- */
   function setStatus(text, cls) {
@@ -234,9 +234,10 @@
            { key: "caption", label: "Caption (short)" },
            { key: "story", label: "Backstory / story", area: true, rows: 3 },
            { key: "place", label: "Place", placeholder: "e.g. Goa" },
-           { key: "date", label: "Date", placeholder: "e.g. Dec 2024" }],
+           { key: "date", label: "Date", placeholder: "e.g. Dec 2024" },
+           { key: "group", label: "Group label (optional)", placeholder: "e.g. Saputara Trip" }],
           emptyPhoto,
-          "Add a photo for each memory — the backstory shows under the photo."));
+          "Add a photo for each memory. Give the same Group label to adjacent photos to cluster them under one shared caption."));
 
         d.appendChild(body);
         list.appendChild(d);

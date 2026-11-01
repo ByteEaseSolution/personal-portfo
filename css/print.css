@@ -141,6 +141,13 @@
   /* keep captions/stories from stretching the polaroid wider than the photo */
   .scrapbook .polaroid figcaption,
   .scrapbook .polaroid .photo-story { max-width: 52mm; margin-left: auto; margin-right: auto; }
+
+  /* a cluster of photos sharing one caption (spans the full width) */
+  .photo-group { grid-column: 1 / -1; text-align: center; margin: 3mm 0 6mm; page-break-inside: avoid; break-inside: avoid; }
+  .group-photos { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 5mm 6mm; }
+  .group-photos .polaroid { width: auto !important; }
+  .group-photos .polaroid .photo img { width: auto; height: auto; max-height: 40mm; max-width: 48mm; }
+  .group-label { font-family: var(--hand); font-size: 1.5rem; color: #42283a; margin-top: 2.5mm; }
   .polaroid figcaption { font-size: 1.25rem; padding: .25rem .2rem .35rem; }
   .polaroid figcaption .meta { font-size: .62rem; }
 

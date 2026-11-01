@@ -28,6 +28,7 @@
           const first = capEl.childNodes[0];
           caption = first && first.nodeType === 3 ? first.textContent.trim() : "";
         }
+        if (!caption && im.dataset && im.dataset.caption) caption = im.dataset.caption;  // grouped photos
         return { el: im, src: im.getAttribute("src"), caption, meta, story: storyEl ? storyEl.textContent : "" };
       })
       .filter(Boolean);

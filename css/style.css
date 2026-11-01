@@ -199,6 +199,13 @@ img { max-width: 100%; display: block; }
 
 /* ---------- scrapbook gallery ---------- */
 .scrapbook { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 2.2rem 1.8rem; }
+
+/* a cluster of photos sharing one caption */
+.photo-group { grid-column: 1 / -1; text-align: center; margin: .5rem auto 1rem; }
+.group-photos { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 1.6rem 1.3rem; }
+.group-photos .polaroid { width: auto; }
+.group-photos .polaroid .photo img { width: auto; height: auto; max-height: 230px; max-width: 300px; object-fit: contain; }
+.group-label { font-family: var(--hand); font-size: 2rem; color: var(--ink); margin-top: .8rem; }
 .scrapbook .polaroid { align-self: start; }
 
 /* ---------- videos ---------- */
