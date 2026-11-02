@@ -11,7 +11,7 @@ window.PORTFOLIO_DATA = {
       "intro": "A little about who I am.",
       "paragraphs": [
         "I like brown shades in colors",
-        "I like Singing, I like slow songs, some of my fav songs are: (fav songs), I like jamming on Garba songs, I know plenty of them",
+        "I like Singing, I like slow songs, and can vibe to any kinda song, I like jamming on Garba songs, I know plenty of them",
         "I love doing Garba, I am good at dancing.",
         "During school, I was active in sports, olympiad, and art. Participated in Sport Events like: Running, Hurdles, Khokho (District), Chess. Have medals in Olympiad.",
         "I love mostly all of the festivals.",
@@ -22,8 +22,7 @@ window.PORTFOLIO_DATA = {
         "I like Strawberry/Mango Icecream | don't have preference in cake",
         "My current goal is to work in pvt sector company, and expand knowledge in AI technologies.",
         "I know how to solve Rubik's Cube",
-        "I work at Dynatech Systems as an AI Engineer",
-        ""
+        "I work at Dynatech Systems as an AI Engineer"
       ],
       "facts": [
         {
@@ -201,6 +200,14 @@ window.PORTFOLIO_DATA = {
         {
           "src": "photos/1x8R0ArkqBZkNsxe6h9dA7HWJ-Bi9FRmy.jpg",
           "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1x1sJm7vtqiIbgjiLD1dk_fFb0lpKg9-i.jpg",
+          "caption": "Fancy Dress Competition",
           "story": "",
           "place": "",
           "date": "",
@@ -983,6 +990,118 @@ window.PORTFOLIO_DATA = {
           "place": "",
           "date": "",
           "group": "Random Lichi Flower"
+        },
+        {
+          "src": "photos/17Tarf3mEXISDLp2h-XO5eK6JX1PIm6eU.jpg",
+          "caption": "Matching Bracelet",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1FSnQTSfUElUxe8ELzv_sRMPEBWPxUm2v.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Lichi Flower"
+        },
+        {
+          "src": "photos/1eVxnkuV4zwyqFmMPpbpRFyq6Sdq0Ei1f.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Random Lichi Flower"
+        },
+        {
+          "src": "photos/1vYQx4CIOOVIEItzzdETGE9acYQSY7Kiw.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Prarthna bday"
+        },
+        {
+          "src": "photos/1bqS_MKQLvO9J9iGH-HRQ8HHfalfoB_Vo.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Prarthna bday"
+        },
+        {
+          "src": "photos/1mjITbElB8imAhUBdU4vVFuC1jCyX2tRI.jpg",
+          "caption": "Random Period Craving",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1BK4Ur5bkQKSRYELU6gowau_o4bdigdNk.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Prarthna bday"
+        },
+        {
+          "src": "photos/1GGkgSonOY9-BlvbEwod23QqHbAP5A3FP.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Nail Paint"
+        },
+        {
+          "src": "photos/111rWej3qnNq0FTNNcafYU8acpvDSD2Ua.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Shopping"
+        },
+        {
+          "src": "photos/1Ld7nBnYPhIqKe3lpWDcIc2DGGcprSLbe.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Shopping"
+        },
+        {
+          "src": "photos/10w5ONJjhyIrTvWoabZFGNNncZohdc3Vi.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Shopping"
+        },
+        {
+          "src": "photos/1p60UWroibY7T72gbewlxlTXw13qRTea6.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Nail Paint"
+        },
+        {
+          "src": "photos/12NgAsXDLyrmJciagucrV4ixMiiqCoKfG.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1k41v-3ukkKZVa8t3rjNif8Rh27bAsyh-.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
         }
       ]
     },
@@ -1312,6 +1431,14 @@ window.PORTFOLIO_DATA = {
           "place": "",
           "date": "",
           "group": "Law Garden"
+        },
+        {
+          "src": "photos/14JI8OuSlqqxCyJpyMqzKsxY79UB2msG1.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Carnival"
         }
       ]
     },
@@ -1520,7 +1647,7 @@ window.PORTFOLIO_DATA = {
           "story": "",
           "place": "",
           "date": "",
-          "group": "Navratri Day 10"
+          "group": "Navratri Day-10"
         },
         {
           "src": "photos/1qEFYqECNU4FZJVpTyk-imf4dR1ZRRouO.jpg",
@@ -1528,7 +1655,7 @@ window.PORTFOLIO_DATA = {
           "story": "",
           "place": "",
           "date": "",
-          "group": "Navratri Day 10"
+          "group": "Navratri Day-10"
         },
         {
           "src": "photos/1C6r8M40EogT0a7oXbcfPysGp3hPpGQ7y.jpg",
@@ -1536,7 +1663,15 @@ window.PORTFOLIO_DATA = {
           "story": "",
           "place": "",
           "date": "",
-          "group": "Navratri Day 10"
+          "group": "Navratri Day-10"
+        },
+        {
+          "src": "photos/1qaum_2_WP-AfaSf4Az0GEj4oXxW_jlm8.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Navratri Day-3"
         }
       ]
     },
@@ -1615,6 +1750,22 @@ window.PORTFOLIO_DATA = {
         {
           "src": "photos/16kSWNZ7t6d43TEr3IgN84vW4MuUF_DvQ.jpg",
           "caption": "Aloo Sabji and Roti",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1MAjCTfUvBqKIOeI4TdiLsLDcWb-CwW25.jpg",
+          "caption": "Handwa",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1mOx3Yb8efgcztfRUqD18Q4i19OeznQat.jpg",
+          "caption": "Dabeli",
           "story": "",
           "place": "",
           "date": "",
