@@ -23,21 +23,22 @@ brave-browser --headless=new --no-sandbox --disable-gpu --hide-scrollbars \
   --no-pdf-header-footer --print-to-pdf="$TMP/og.pdf" \
   "http://localhost:$PORT/index.html" >/dev/null 2>&1
 
-echo "     -> Samir-Portfolio-print.pdf (original, print quality)"
-cp "$TMP/og.pdf" Samir-Portfolio-print.pdf
-
-echo "2/2  flattening each page to an image (fast version)…"
-python3 - "$TMP/og.pdf" "Samir-Portfolio-fast.pdf" <<'PY'
+echo "2/2  flattening each page to images (both open fast)…"
+python3 - "$TMP/og.pdf" <<'PY'
 import fitz, sys
 src = fitz.open(sys.argv[1])
-out = fitz.open()
-for i in range(src.page_count):
-    p = src[i]; r = p.rect
-    pix = p.get_pixmap(dpi=110)
-    jpg = pix.tobytes("jpeg", jpg_quality=80); pix = None
-    op = out.new_page(width=r.width, height=r.height)
-    op.insert_image(op.rect, stream=jpg)
-out.save(sys.argv[2], garbage=4, deflate=True)
-print("     wrote Samir-Portfolio-fast.pdf —", out.page_count, "pages")
+def flatten(dpi, q, path):
+    out = fitz.open()
+    for i in range(src.page_count):
+        p = src[i]; r = p.rect
+        pix = p.get_pixmap(dpi=dpi)
+        jpg = pix.tobytes("jpeg", jpg_quality=q); pix = None
+        op = out.new_page(width=r.width, height=r.height)
+        op.insert_image(op.rect, stream=jpg)
+    out.save(path, garbage=4, deflate=True); out.close()
+    print("     wrote", path)
+flatten(170, 85, "Samir-Portfolio-print.pdf")   # crisp, for printing
+flatten(110, 80, "Samir-Portfolio-fast.pdf")    # small, for quick viewing
+print("     pages:", src.page_count)
 PY
 echo "Done. Review, then: git add -A && git commit && git push"
