@@ -4,7 +4,7 @@ window.PORTFOLIO_DATA = {
     "name": "Samir",
     "tagline": "A little window into my world - my family, my roots, and Prarthna, the girl who changed everything.",
     "coverPhoto": "photos/1cBtel6ABLYxuFXjjwCtXscimb1MDkilK.jpg",
-    "rev": 1793599956284
+    "rev": 1793613301234
   },
   "chapters": [
     {
@@ -140,11 +140,27 @@ window.PORTFOLIO_DATA = {
       "interests": [],
       "photos": [
         {
+          "src": "photos/1NMFzgDPZKOdJ5E1GVsuRBVnUWl57nKe9.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
           "src": "photos/18PAP8ixCYLSVEA_MNZgwYFTZEkXG4fLJ.jpg",
           "caption": "School Annual Function",
           "story": "I used to participate in every annual function in my school",
           "place": "",
           "date": "Dec 2017"
+        },
+        {
+          "src": "photos/1LCfrIbgo5E1QXIsGrC-479TWW4jSj10s.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
         },
         {
           "src": "photos/10F13NKHwzf76kNJuM8Xv-HAjEKkASGQT.jpg",
@@ -161,16 +177,9 @@ window.PORTFOLIO_DATA = {
           "date": ""
         },
         {
-          "src": "photos/1wpWZbqiSZ_2HLm4Iyb62NTY7WRAUnIHv.jpg",
-          "caption": "",
-          "story": "My first cycle",
-          "place": "",
-          "date": "2015"
-        },
-        {
           "src": "photos/1MB2VwZ7is5aK_zv8UTR5q-1_IZE4BqiL.jpg",
-          "caption": "",
-          "story": "Flower Show",
+          "caption": "Flower Show",
+          "story": "",
           "place": "",
           "date": "2015"
         },
@@ -191,7 +200,7 @@ window.PORTFOLIO_DATA = {
           "group": ""
         },
         {
-          "src": "photos/1x8R0ArkqBZkNsxe6h9dA7HWJ-Bi9FRmy.jpg",
+          "src": "photos/1vQdSxbTWCK-dM8vcEarjp_VtPQSUd1M8.jpg",
           "caption": "",
           "story": "",
           "place": "",
@@ -201,6 +210,109 @@ window.PORTFOLIO_DATA = {
         {
           "src": "photos/1x1sJm7vtqiIbgjiLD1dk_fFb0lpKg9-i.jpg",
           "caption": "Fancy Dress Competition",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1x8R0ArkqBZkNsxe6h9dA7HWJ-Bi9FRmy.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1wpWZbqiSZ_2HLm4Iyb62NTY7WRAUnIHv.jpg",
+          "caption": "My first cycle",
+          "story": "",
+          "place": "",
+          "date": "2015"
+        },
+        {
+          "src": "photos/13_duAvIX0g-3x2rYSwCRMC6hn5PeaMQO.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1LH5sWfRdwMBBZxGI23N6etss0KyOCjMh.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/17JAL8F9aZD-_hUzq-ucwipNptjPNYfTo.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1UOvMk8-VjwasOuo1VszPuCr6gp3f8Cee.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1mhwCFEz1ZUcQyFV8qWIE9XclthfpuV-Z.jpg",
+          "caption": "School Annual Function",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1DND9wWrfh7p_fZA9oMT1dI6NOkZuR9AN.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1KKCEM2RX6ol4M0iRbzP0lpw9vGCvGBCv.jpg",
+          "caption": "Fancy Dress",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/122po79c4Uq_55CKb1NA_pOzJAna-8iIp.jpg",
+          "caption": "Photoshoot",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1-iTZmjNEScs5Ou4YUxZj0y8r8TLLNtqJ.jpg",
+          "caption": "Bhoomika Birthday",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1ih8UuoYW6pt4FBJJynkj40afraTRnLtu.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/17VVF50ZoCUqNjQfX3QChJN6RIAbF38Kt.jpg",
+          "caption": "",
           "story": "",
           "place": "",
           "date": "",
@@ -399,6 +511,14 @@ window.PORTFOLIO_DATA = {
           "story": "Our Old Car",
           "place": "",
           "date": "2015"
+        },
+        {
+          "src": "photos/1R-C1zgbmP7erleHaWViFmp2Hp6AUFNki.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
         }
       ]
     },
@@ -1726,12 +1846,44 @@ window.PORTFOLIO_DATA = {
           "group": "First Family Meetup"
         },
         {
-          "src": "photos/1p36ZISlqbMJpJJ8mJN0Y4W9TYZiX4eWB.jpg",
+          "src": "photos/1IFlE3f73JVEQkkbAPycWnSQWf7WiolFU.jpg",
           "caption": "",
           "story": "",
           "place": "",
           "date": "",
-          "group": "First Family Meetup"
+          "group": "Birthday"
+        },
+        {
+          "src": "photos/1to_7V7mEOVVcxIpy9P7ALi1z6q8xjvyP.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Birthday"
+        },
+        {
+          "src": "photos/1g8krGqnTEjogS6YFzPsFdMebR9Z_pNyQ.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Birthday"
+        },
+        {
+          "src": "photos/1SdC0Dn-QZscrSQaDj399mrLB-7-Pv6iP.jpg",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Birthday"
+        },
+        {
+          "src": "https://drive.google.com/file/d/1Ie88jGxhi7EQ6UCzZEBpt9ATkUaT1N7S/view?usp=drive_link",
+          "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": "Birthday"
         }
       ]
     },
