@@ -37,8 +37,8 @@ def flatten(dpi, q, path):
         op.insert_image(op.rect, stream=jpg)
     out.save(path, garbage=4, deflate=True); out.close()
     print("     wrote", path)
-flatten(170, 85, "Samir-Portfolio-print.pdf")   # crisp, for printing
-flatten(110, 80, "Samir-Portfolio-fast.pdf")    # small, for quick viewing
+flatten(300, 88, "Samir-Portfolio-print.pdf")   # full photo resolution, for printing
+flatten(110, 80, "Samir-Portfolio-fast.pdf")    # small, for quick viewing on a phone
 print("     pages:", src.page_count)
 PY
 echo "Done. Review, then: git add -A && git commit && git push"
