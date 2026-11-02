@@ -4,7 +4,7 @@ window.PORTFOLIO_DATA = {
     "name": "Samir",
     "tagline": "A little window into my world - my family, my roots, and Prarthna, the girl who changed everything.",
     "coverPhoto": "photos/1cBtel6ABLYxuFXjjwCtXscimb1MDkilK.jpg",
-    "rev": 1793613352989
+    "rev": 1793633145846
   },
   "chapters": [
     {
@@ -48,7 +48,7 @@ window.PORTFOLIO_DATA = {
         },
         {
           "label": "Salary",
-          "value": "8 LPA"
+          "value": "8.3 LPA"
         },
         {
           "label": "Work Experience",
