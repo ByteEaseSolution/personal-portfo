@@ -80,7 +80,7 @@
   .facts--card { max-width: 150mm; margin: 0 auto 5mm; }
   .chips.center { max-width: 150mm; margin: 0 auto 5mm; }
   .photo-story {
-    font-size: .82rem; line-height: 1.35; color: #6b4a5a;
+    font-size: .95rem; line-height: 1.4; color: #6b4a5a;
     padding: 0 1mm 2mm; text-align: center;
   }
 
@@ -125,30 +125,22 @@
   /* ---- gallery: scrapbook collage, two polaroids per row ---- */
   .scrapbook {
     grid-template-columns: minmax(0,1fr) minmax(0,1fr) !important;
-    gap: 8mm 6mm !important;
+    gap: 9mm 7mm !important;
     align-items: start;
-    justify-items: center;          /* centre each polaroid in its column */
     margin: 2mm 0 0;
   }
-  /* each polaroid shrinks to hug its photo; photos kept small and in their
-     true orientation (portrait = small & tall, landscape = small & wide) */
-  .scrapbook .polaroid { width: fit-content; max-width: 100%; }
-  .scrapbook .polaroid .photo { overflow: hidden; background: #fffafc; text-align: center; }
-  .scrapbook .polaroid .photo img {
-    display: inline-block; width: auto; height: auto;
-    max-width: 100%; max-height: 50mm;
-  }
-  /* keep captions/stories from stretching the polaroid wider than the photo */
-  .scrapbook .polaroid figcaption,
-  .scrapbook .polaroid .photo-story { max-width: 52mm; margin-left: auto; margin-right: auto; }
+  /* photos fill their column at natural aspect — matches the website UI */
+  .scrapbook .polaroid { width: 100%; }
+  .scrapbook .polaroid .photo { overflow: hidden; }
+  .scrapbook .polaroid .photo img { display: block; width: 100%; height: auto; }
 
   /* a cluster of photos sharing one caption (spans the full width) */
   .photo-group { grid-column: 1 / -1; text-align: center; margin: 3mm 0 6mm; page-break-inside: avoid; break-inside: avoid; }
   .group-photos { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 5mm 6mm; }
   .group-photos .polaroid { width: auto !important; }
-  .group-photos .polaroid .photo img { width: auto; height: auto; max-height: 40mm; max-width: 48mm; }
-  .group-label { font-family: var(--hand); font-size: 1.5rem; color: #42283a; margin-top: 2.5mm; }
-  .polaroid figcaption { font-size: 1.25rem; padding: .25rem .2rem .35rem; }
+  .group-photos .polaroid .photo img { width: auto; height: auto; max-height: 60mm; max-width: 74mm; }
+  .group-label { font-family: var(--hand); font-size: 1.7rem; color: #42283a; margin-top: 2.5mm; }
+  .polaroid figcaption { font-size: 1.45rem; padding: .3rem .2rem .4rem; }
   .polaroid figcaption .meta { font-size: .62rem; }
 
   /* ---- closing ---- */

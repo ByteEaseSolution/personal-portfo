@@ -70,6 +70,9 @@ img { max-width: 100%; display: block; }
   transition: transform .15s, background .2s;
 }
 .btn-pdf:hover { background: #9d442f; transform: translateY(-1px); }
+.pdf-btns { display: inline-flex; gap: .45rem; align-items: center; }
+.btn-pdf--fast { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); box-shadow: none; }
+.btn-pdf--fast:hover { background: var(--accent); color: #fff; }
 
 /* ---------- cover ---------- */
 .cover {

@@ -23,8 +23,11 @@ brave-browser --headless=new --no-sandbox --disable-gpu --hide-scrollbars \
   --no-pdf-header-footer --print-to-pdf="$TMP/og.pdf" \
   "http://localhost:$PORT/index.html" >/dev/null 2>&1
 
-echo "2/2  flattening each page to an image…"
-python3 - "$TMP/og.pdf" "Samir-Portfolio.pdf" <<'PY'
+echo "     -> Samir-Portfolio-print.pdf (original, print quality)"
+cp "$TMP/og.pdf" Samir-Portfolio-print.pdf
+
+echo "2/2  flattening each page to an image (fast version)…"
+python3 - "$TMP/og.pdf" "Samir-Portfolio-fast.pdf" <<'PY'
 import fitz, sys
 src = fitz.open(sys.argv[1])
 out = fitz.open()
@@ -35,6 +38,6 @@ for i in range(src.page_count):
     op = out.new_page(width=r.width, height=r.height)
     op.insert_image(op.rect, stream=jpg)
 out.save(sys.argv[2], garbage=4, deflate=True)
-print("     wrote Samir-Portfolio.pdf —", out.page_count, "pages")
+print("     wrote Samir-Portfolio-fast.pdf —", out.page_count, "pages")
 PY
-echo "Done. Review, then: git add Samir-Portfolio.pdf && git commit && git push"
+echo "Done. Review, then: git add -A && git commit && git push"
