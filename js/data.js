@@ -3,7 +3,8 @@ window.PORTFOLIO_DATA = {
   "meta": {
     "name": "Samir",
     "tagline": "A little window into my world - my family, my roots, and Prarthna, the girl who changed everything.",
-    "coverPhoto": "photos/1cBtel6ABLYxuFXjjwCtXscimb1MDkilK.jpg"
+    "coverPhoto": "photos/1cBtel6ABLYxuFXjjwCtXscimb1MDkilK.jpg",
+    "rev": 1793598718934
   },
   "chapters": [
     {

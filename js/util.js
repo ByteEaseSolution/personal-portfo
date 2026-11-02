@@ -5,12 +5,21 @@ const STORAGE_KEY = "samir_portfolio_data_v2";
 /* Load data: prefer anything saved in this browser (from the admin editor),
    otherwise fall back to the shipped js/data.js content. */
 function loadPortfolioData() {
+  // Deep clone so edits never mutate the shipped defaults.
+  const fileData = JSON.parse(JSON.stringify(window.PORTFOLIO_DATA || {}));
+  const fileRev = (fileData.meta && fileData.meta.rev) || 0;
   try {
     const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) return JSON.parse(saved);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      const savedRev = (parsed.meta && parsed.meta.rev) || 0;
+      // A newer published file wins over an older browser draft (keeps the
+      // admin in sync); otherwise the local draft is kept.
+      if (savedRev >= fileRev) return parsed;
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(fileData)); } catch (e) {}
+    }
   } catch (e) { /* ignore and fall back */ }
-  // Deep clone so edits never mutate the shipped defaults.
-  return JSON.parse(JSON.stringify(window.PORTFOLIO_DATA || {}));
+  return fileData;
 }
 
 function savePortfolioData(data) {
