@@ -65,6 +65,7 @@ img { max-width: 100%; display: block; }
 .btn-pdf {
   font-family: var(--sans); font-size: .85rem; font-weight: 600;
   color: #fff; background: var(--accent); border: none; cursor: pointer;
+  display: inline-block; text-decoration: none; white-space: nowrap;
   padding: .55rem 1rem; border-radius: 999px; box-shadow: var(--shadow-sm);
   transition: transform .15s, background .2s;
 }
