@@ -129,10 +129,14 @@
     align-items: start;
     margin: 2mm 0 0;
   }
-  /* photos fill their column at natural aspect — matches the website UI */
+  /* big photos, but height-capped so four (2x2) fit a page; kept in their
+     true orientation (portraits sit centred, never cropped) */
   .scrapbook .polaroid { width: 100%; }
-  .scrapbook .polaroid .photo { overflow: hidden; }
-  .scrapbook .polaroid .photo img { display: block; width: 100%; height: auto; }
+  .scrapbook .polaroid .photo { overflow: hidden; background: #fffafc; text-align: center; }
+  .scrapbook .polaroid .photo img {
+    display: inline-block; width: auto; height: auto;
+    max-width: 100%; max-height: 85mm;
+  }
 
   /* a cluster of photos sharing one caption (spans the full width) */
   .photo-group { grid-column: 1 / -1; text-align: center; margin: 3mm 0 6mm; page-break-inside: avoid; break-inside: avoid; }
