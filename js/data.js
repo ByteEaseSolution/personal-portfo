@@ -10,19 +10,11 @@ window.PORTFOLIO_DATA = {
       "title": "About Me",
       "intro": "A little about who I am.",
       "paragraphs": [
-        "I like brown shades in colors",
-        "I like Singing, I like slow songs, and can vibe to any kinda song, I like jamming on Garba songs, I know plenty of them",
-        "I love doing Garba, I am good at dancing.",
-        "During school, I was active in sports, olympiad, and art. Participated in Sport Events like: Running, Hurdles, Khokho (District), Chess. Have medals in Olympiad.",
-        "I love mostly all of the festivals.",
-        "I like Winters cause I can wear full sleeves.",
-        "I like Sweet things like Oreo, Strawberry, Mango.",
-        "I like Dosa and South Indian foods.",
-        "My goto food item is Roti/Sabji - Aloo pyaaz and chass or aam ras",
-        "I like Strawberry/Mango Icecream | don't have preference in cake",
-        "My current goal is to work in pvt sector company, and expand knowledge in AI technologies.",
-        "I know how to solve Rubik's Cube",
-        "I work at Dynatech Systems as an AI Engineer"
+        "I'm an AI Engineer at Dynatech Systems, and I genuinely enjoy my work. Right now, my goal is to grow within the private sector and keep expanding my knowledge in AI.",
+        "Music and dance are a big part of who I am. I love to sing — slow songs are my favourite, though I can vibe to just about any kind — and I know plenty of Garba songs. Dancing comes naturally to me, and I especially love doing Garba.",
+        "I've been active since my school days — in sports, olympiads and art. I took part in running, hurdles, district-level Kho-Kho and chess, and I have a few olympiad medals too. Just for fun, I can also solve a Rubik's cube.",
+        "I'm someone who enjoys the simple things — I love almost every festival, I'm fond of winters (I finally get to wear full sleeves!), and I have a soft spot for warm brown shades.",
+        "When it comes to food, I have a sweet tooth — Oreo, strawberry and mango are my weakness — and I love dosa and South Indian food. I'm also a big fan of pyaaz kachori and namkeen snacks. My everyday comfort meal is simple: roti-sabji with aloo-pyaaz, paired with chaas or aamras. A strawberry or mango ice-cream always works too, though with cake I'm happy either way."
       ],
       "facts": [
         {
@@ -219,13 +211,11 @@ window.PORTFOLIO_DATA = {
       "title": "My Family",
       "intro": "The people who made me who I am.",
       "paragraphs": [
-        "We are family of 4 people: Mom (Deepa) , Dad (Pawan) , my sis (Bhoomika) and me",
-        "My dad has a job, my mom is a housewife, Bhoomika is in 2nd year of BBA",
-        "Dad loves to do Yoga, and is very health conscious, and likes to follow a routine. Dad is CA inter. And currently, he is working as a Commercial Head at Supernova Engineers Ltd. ",
-        "Mom is housewife, she likes to dance, she loves energetic songs, very much caring about her hair, she likes coffee. She prefers to keep her surroundings clean. She loves taking care of plants in our home. She did Home Science.",
-        "Bhoomika was State level Basketball player during her school time. She is currently studying in GLS university, She is also preparing for CAT.",
-        "My mom is from Bikaner (Rajasthan), dad is from Churu (Rajasthan). I am born and bought up in Ahmedabad.",
-        "We have 2 homes in Ahmedabad, and 1 car with 2 activas."
+        "We're a family of four — my mom Deepa, my dad Pawan, my sister Bhoomika and me.",
+        "My dad is a CA (Inter) and currently works as the Commercial Head at Supernova Engineers Ltd. He's very health-conscious, loves his yoga, and likes to follow a routine.",
+        "My mom is a homemaker and the heart of our home. She did Home Science, loves to dance to energetic songs, enjoys her coffee, and takes great care of herself and our home — she's especially fond of looking after the plants around the house.",
+        "My sister Bhoomika was a state-level basketball player in school. She's now in her second year of BBA at GLS University and is also preparing for the CAT.",
+        "Our roots are in Rajasthan — my mom is from Bikaner and my dad from Churu — while I was born and brought up in Ahmedabad, where we have two homes, a car and two Activas."
       ],
       "facts": [
         {
@@ -332,7 +322,11 @@ window.PORTFOLIO_DATA = {
       "title": "Culture & Roots",
       "intro": "Where I come from.",
       "paragraphs": [
-        "A short note on your background, community and the traditions your family holds close."
+        "My roots are in Rajasthan — my family hails from Bikaner and Churu. We are Pipa Kshatriya (Darji), and there's a story behind the name: our ancestors were Kshatriyas, warriors who, after years of war, chose to lay down their swords and take up tailoring instead — peace over conflict. It's a part of my heritage I feel quietly proud of.",
+        "Faith has always been a steady presence in our home, and we hold Hanuman ji especially close. I usually visit the Hanuman temple every Tuesday, and a few years ago my dad and I would walk there together every Sunday — a small ritual I still cherish. Being Rajasthani, we also celebrate Gauri Pooja, which is a big festival for us.",
+        "Festivals are when our whole family comes together. We've welcomed Ganesh ji into our home before — there's a lovely tradition of committing to it for one, three or five years — and we're planning to bring him home again next year. On Rakshabandhan we head to my Bade Papa's place, and Diwali is a warm community get-together, usually followed by a family trip.",
+        "The values I've grown up with are simple but important to me — respect for elders, and a home where we share everything openly. By nature I'm easy-going; I don't get angry quickly, and I love making the people around me laugh.",
+        "Going forward, I believe in balance — staying rooted in our traditions and faith while keeping an open mind, without neglecting either. These are the things I'd love to carry into my own family one day, along with warm, friendly bonds with everyone around me."
       ],
       "facts": [
         {
@@ -341,7 +335,7 @@ window.PORTFOLIO_DATA = {
         },
         {
           "label": "Community",
-          "value": ""
+          "value": "Pipa Kshatriya (Darji)"
         },
         {
           "label": "Mother tongue",
