@@ -4,7 +4,7 @@ window.PORTFOLIO_DATA = {
     "name": "Samir",
     "tagline": "A little window into my world - my family, my roots, and Prarthna, the girl who changed everything.",
     "coverPhoto": "photos/1cBtel6ABLYxuFXjjwCtXscimb1MDkilK.jpg",
-    "rev": 1793598718934
+    "rev": 1793599956284
   },
   "chapters": [
     {
@@ -1093,6 +1093,22 @@ window.PORTFOLIO_DATA = {
         {
           "src": "photos/1k41v-3ukkKZVa8t3rjNif8Rh27bAsyh-.jpg",
           "caption": "",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1gDt_fY_q-I5Qrx66ifD4WKTUCJ3XFtYZ.jpg",
+          "caption": "Our chotu photo",
+          "story": "",
+          "place": "",
+          "date": "",
+          "group": ""
+        },
+        {
+          "src": "photos/1ijboIqXMjMr-SJr1TzvsYuw3jVgGzqfX.jpg",
+          "caption": "Us",
           "story": "",
           "place": "",
           "date": "",
