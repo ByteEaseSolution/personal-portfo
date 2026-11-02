@@ -237,7 +237,7 @@
            { key: "date", label: "Date", placeholder: "e.g. Dec 2024" },
            { key: "group", label: "Group label (optional)", placeholder: "e.g. Saputara Trip" }],
           emptyPhoto,
-          "Add a photo for each memory. Give the same Group label to adjacent photos to cluster them under one shared caption."));
+          "Add a photo for each memory. Give the same Group label to photos to cluster them under one shared caption (they don't need to be next to each other)."));
 
         d.appendChild(body);
         list.appendChild(d);

@@ -38,20 +38,23 @@
   /* Build the gallery. Consecutive photos that share the same "group" label are
      clustered together under one shared caption; others render individually. */
   function buildScrapbook(photos) {
+    // Group ALL photos that share the same label into one cluster (they don't
+    // need to be adjacent); the cluster appears where its first photo is.
     const items = [];
-    let i = 0;
-    while (i < photos.length) {
-      const g = (photos[i].group || "").trim();
+    const groupIndex = new Map();
+    photos.forEach((p) => {
+      const g = (p.group || "").trim();
       if (g) {
-        const grp = [photos[i]]; let j = i + 1;
-        while (j < photos.length && (photos[j].group || "").trim() === g) { grp.push(photos[j]); j++; }
-        items.push({ type: "group", label: g, photos: grp });
-        i = j;
+        if (!groupIndex.has(g)) {
+          groupIndex.set(g, items.length);
+          items.push({ type: "group", label: g, photos: [p] });
+        } else {
+          items[groupIndex.get(g)].photos.push(p);
+        }
       } else {
-        items.push({ type: "single", photo: photos[i] });
-        i++;
+        items.push({ type: "single", photo: p });
       }
-    }
+    });
     let n = 0;
     const html = items.map((it) => {
       if (it.type === "single") return photoCard(it.photo, n++);
